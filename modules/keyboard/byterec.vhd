@@ -22,8 +22,8 @@ port
     clk: in std_logic;
     new_data: in std_logic;
     key_code: in std_logic_vector(7 downto 0);
-    pressed: out std_logic;
-    released: out std_logic;
+    make: out std_logic;
+    break: out std_logic;
     full_key_code: out std_logic_vector(8 downto 0) 
 );
 end entity;
@@ -33,10 +33,10 @@ architecture arc_byterec of byterec is
     (
         idle,           -- initial state
         sample_nor,     -- sample out reg of normal scan
-        new_pressed,    -- anounce out new pressed
+        new_make,    -- anounce out new make
         wait_rel,       -- wait for code after release code
         sample_rel,      -- sample out new code of released key
-        new_released,   -- anounce out new pressed
+        new_break,   -- anounce out new make
         wait_ext,       -- wait for code after extended code
         sample_ext,     -- sample out new extended code
         wait_ext_rel,   -- wait for code after ext-rel code
@@ -60,7 +60,7 @@ begin
         when 16#E0#      =>  ext_code <='1';  -- 224
         when 16#F0#      =>  rel_code <='1';  -- 240
         when others      =>
-        -- E1 -- part of scan code of key 126 (Pause-released)
+        -- E1 -- part of scan code of key 126 (Pause-Break)
         -- 00 - buffer overflow (
         -- AA - keyboad passed self test
         -- EE - response to echo command
@@ -84,8 +84,8 @@ end process;
 process (present_state, new_data, nor_code, ext_code, rel_code)
 begin
     -- default outputs (for no latches)
-    pressed <= '0';
-    released <= '0';
+    make <= '0';
+    break <= '0';
     oe <= '0';
     ext <= '0';
     case present_state is
@@ -105,9 +105,9 @@ begin
             end if;
         when sample_nor =>
             oe <= '1';
-            next_state <= new_pressed;
-        when new_pressed =>
-            pressed <= '1';
+            next_state <= new_make;
+        when new_make =>
+            make <= '1';
             next_state <= idle;
         when wait_rel =>
             if new_data = '1' then
@@ -121,9 +121,9 @@ begin
             end if;
         when sample_rel =>
             oe <= '1';
-            next_state <= new_released;
-        when new_released =>
-            released   <= '1';
+            next_state <= new_break;
+        when new_break =>
+            break   <= '1';
             next_state <= idle;
         when wait_ext      =>
             if new_data = '1' then
@@ -140,7 +140,7 @@ begin
         when sample_ext =>
             oe <= '1';
             ext <= '1';
-            next_state <= new_pressed;
+            next_state <= new_make;
         when wait_ext_rel =>
             if new_data = '1' then
                 if nor_code = '1' then
@@ -154,7 +154,7 @@ begin
         when sample_ext_rel =>
             oe  <= '1';
             ext <= '1';
-            next_state <= new_released;
+            next_state <= new_break;
         when others =>
             next_state <= idle;  -- bad states recover
     end case;

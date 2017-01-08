@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Thu Dec 29 18:37:21 2016
+Wed Jan 04 14:06:07 2017
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -13,10 +13,8 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |fsm|curr_state
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |fsm
- 11. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +40,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 29 18:37:21 2016        ;
+; Analysis & Synthesis Status        ; Successful - Wed Jan 04 14:06:07 2017        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; project                                      ;
-; Top-level Entity Name              ; fsm                                          ;
+; Top-level Entity Name              ; ram_counter                                  ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 59                                           ;
-;     Total combinational functions  ; 57                                           ;
-;     Dedicated logic registers      ; 38                                           ;
-; Total registers                    ; 38                                           ;
-; Total pins                         ; 15                                           ;
+; Total logic elements               ; 23                                           ;
+;     Total combinational functions  ; 23                                           ;
+;     Dedicated logic registers      ; 10                                           ;
+; Total registers                    ; 10                                           ;
+; Total pins                         ; 23                                           ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -64,7 +62,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; fsm                ; project            ;
+; Top-level entity name                                                      ; ram_counter        ; project            ;
 ; Family name                                                                ; Cyclone II         ; Stratix II         ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -147,43 +145,42 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                        ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
-; modules/utils.vhd                ; yes             ; User VHDL File  ; D:/Documents/OneDrive - Technion/winter 1617/lab1_044160/project/code/modules/utils.vhd             ;
-; modules/state_machine/fsm.vhd    ; yes             ; User VHDL File  ; D:/Documents/OneDrive - Technion/winter 1617/lab1_044160/project/code/modules/state_machine/fsm.vhd ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
++-------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                              ;
++-------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
+; modules/signal_proccesing/ram_counter.vhd ; yes             ; User VHDL File  ; D:/Documents/OneDrive - Technion/winter 1617/lab1_044160/project/project_1_1_17/modules/signal_proccesing/ram_counter.vhd ;
++-------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-; Estimated Total logic elements              ; 59    ;
-;                                             ;       ;
-; Total combinational functions               ; 57    ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 19    ;
-;     -- 3 input functions                    ; 2     ;
-;     -- <=2 input functions                  ; 36    ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 27    ;
-;     -- arithmetic mode                      ; 30    ;
-;                                             ;       ;
-; Total registers                             ; 38    ;
-;     -- Dedicated logic registers            ; 38    ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 15    ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 38    ;
-; Total fan-out                               ; 268   ;
-; Average fan-out                             ; 2.44  ;
-+---------------------------------------------+-------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 23          ;
+;                                             ;             ;
+; Total combinational functions               ; 23          ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 12          ;
+;     -- 3 input functions                    ; 0           ;
+;     -- <=2 input functions                  ; 11          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 14          ;
+;     -- arithmetic mode                      ; 9           ;
+;                                             ;             ;
+; Total registers                             ; 10          ;
+;     -- Dedicated logic registers            ; 10          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 23          ;
+; Maximum fan-out node                        ; LessThan0~0 ;
+; Maximum fan-out                             ; 10          ;
+; Total fan-out                               ; 119         ;
+; Average fan-out                             ; 2.13        ;
++---------------------------------------------+-------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -191,22 +188,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |fsm                       ; 57 (57)           ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |fsm                ; work         ;
+; |ram_counter               ; 23 (23)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |ram_counter        ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------+
-; State Machine - |fsm|curr_state                                                                        ;
-+-----------------------+--------------------+-----------------+-----------------------+-----------------+
-; Name                  ; curr_state.success ; curr_state.bomb ; curr_state.check_data ; curr_state.idle ;
-+-----------------------+--------------------+-----------------+-----------------------+-----------------+
-; curr_state.idle       ; 0                  ; 0               ; 0                     ; 0               ;
-; curr_state.check_data ; 0                  ; 0               ; 1                     ; 1               ;
-; curr_state.bomb       ; 0                  ; 1               ; 0                     ; 1               ;
-; curr_state.success    ; 1                  ; 0               ; 0                     ; 1               ;
-+-----------------------+--------------------+-----------------+-----------------------+-----------------+
 
 
 +------------------------------------------------------+
@@ -214,24 +198,14 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 38    ;
+; Total registers                              ; 10    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 10    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 33    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |fsm                    ;
-+----------------+--------------------------------------------------------+--------------+
-; Parameter Name ; Value                                                  ; Type         ;
-+----------------+--------------------------------------------------------+--------------+
-; PASSWORD       ; A(D"100",D"-100",D"200",D"-200",D"300",D"-300",D"400") ; Array/Record ;
-+----------------+--------------------------------------------------------+--------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------+
@@ -240,17 +214,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu Dec 29 18:37:18 2016
+    Info: Processing started: Wed Jan 04 14:06:05 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
-Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/sound_detector.vhd
-    Info: Found design unit 1: sound_detector-arc_sound_detector
-    Info: Found entity 1: sound_detector
-Info: Found 2 design units, including 0 entities, in source file modules/utils.vhd
-    Info: Found design unit 1: utils
-    Info: Found design unit 2: utils-body
-Info: Found 2 design units, including 1 entities, in source file modules/signal_generation/clk_divider.vhd
-    Info: Found design unit 1: clk_divider-arc_clk_divider
-    Info: Found entity 1: clk_divider
+Info: Found 1 design units, including 1 entities, in source file examples/fsm_from_kb.bdf
+    Info: Found entity 1: fsm_from_kb
+Info: Found 1 design units, including 1 entities, in source file examples/sine_wave_generation_with_kb.bdf
+    Info: Found entity 1: sine_wave_generation_with_kb
+Info: Found 2 design units, including 1 entities, in source file modules/state_machine/fsm.vhd
+    Info: Found design unit 1: fsm-arc_fsm
+    Info: Found entity 1: fsm
+Info: Found 2 design units, including 1 entities, in source file modules/state_machine/sound_counter.vhd
+    Info: Found design unit 1: sound_counter-arc_sound_counter
+    Info: Found entity 1: sound_counter
+Info: Found 2 design units, including 1 entities, in source file modules/keyboard/bitrec.vhd
+    Info: Found design unit 1: bitrec-arc_bitrec
+    Info: Found entity 1: bitrec
+Info: Found 2 design units, including 1 entities, in source file modules/keyboard/byterec.vhd
+    Info: Found design unit 1: byterec-arc_byterec
+    Info: Found entity 1: byterec
+Info: Found 2 design units, including 1 entities, in source file modules/keyboard/key_pressed_detector.vhd
+    Info: Found design unit 1: key_pressed_detector-arc_key_pressed_detector
+    Info: Found entity 1: key_pressed_detector
+Info: Found 1 design units, including 1 entities, in source file modules/keyboard/keyboard.bdf
+    Info: Found entity 1: keyboard
+Info: Found 2 design units, including 1 entities, in source file modules/keyboard/lpf.vhd
+    Info: Found design unit 1: lpf-arc_lpf
+    Info: Found entity 1: lpf
 Info: Found 2 design units, including 1 entities, in source file modules/signal_generation/counter_256.vhd
     Info: Found design unit 1: counter_256-SYN
     Info: Found entity 1: counter_256
@@ -259,31 +248,34 @@ Info: Found 2 design units, including 1 entities, in source file modules/signal_
     Info: Found entity 1: sine_table
 Info: Found 1 design units, including 1 entities, in source file modules/signal_generation/sine_wave.bdf
     Info: Found entity 1: sine_wave
-Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/acdc.vhd
-    Info: Found design unit 1: acdc-arc_acdc
-    Info: Found entity 1: acdc
-Info: Found 1 design units, including 1 entities, in source file modules/keyboard/keyboard.bdf
-    Info: Found entity 1: keyboard
-Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/hysteresis.vhd
-    Info: Found design unit 1: hysteresis-arc_hysteresis
-    Info: Found entity 1: hysteresis
-Info: Found 1 design units, including 1 entities, in source file examples/sine_wave_detection_example.bdf
-    Info: Found entity 1: sine_wave_detection_example
-Info: Found 2 design units, including 1 entities, in source file modules/state_machine/sound_counter.vhd
-    Info: Found design unit 1: sound_counter-arc_sound_counter
-    Info: Found entity 1: sound_counter
-Info: Found 2 design units, including 1 entities, in source file modules/state_machine/fsm.vhd
-    Info: Found design unit 1: fsm-arc_fsm
-    Info: Found entity 1: fsm
-Info: Elaborating entity "fsm" for the top level hierarchy
-Info: Implemented 75 device resources after synthesis - the final resource count might be different
-    Info: Implemented 13 input pins
-    Info: Implemented 2 output pins
-    Info: Implemented 60 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 240 megabytes
-    Info: Processing ended: Thu Dec 29 18:37:21 2016
-    Info: Elapsed time: 00:00:03
+Info: Found 2 design units, including 1 entities, in source file modules/misc/bcd2ss.vhd
+    Info: Found design unit 1: bcd2ss-arc_bcd2ss
+    Info: Found entity 1: bcd2ss
+Info: Found 2 design units, including 1 entities, in source file modules/misc/clk_divider.vhd
+    Info: Found design unit 1: clk_divider-arc_clk_divider
+    Info: Found entity 1: clk_divider
+Info: Found 2 design units, including 1 entities, in source file modules/misc/ob_si_conv.vhd
+    Info: Found design unit 1: ob_si_conv-arc_ob_si_conv
+    Info: Found entity 1: ob_si_conv
+Info: Found 2 design units, including 0 entities, in source file modules/misc/utils.vhd
+    Info: Found design unit 1: utils
+    Info: Found design unit 2: utils-body
+Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/ram_counter.vhd
+    Info: Found design unit 1: ram_counter-arc_ram_counter
+    Info: Found entity 1: ram_counter
+Info: Found 1 design units, including 1 entities, in source file modules/signal_proccesing/auto_cor.bdf
+    Info: Found entity 1: auto_cor
+Info: Elaborating entity "ram_counter" for the top level hierarchy
+Warning: Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "enable"
+Info: Implemented 56 device resources after synthesis - the final resource count might be different
+    Info: Implemented 3 input pins
+    Info: Implemented 20 output pins
+    Info: Implemented 33 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 233 megabytes
+    Info: Processing ended: Wed Jan 04 14:06:07 2017
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

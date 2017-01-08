@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 400 192)
+	(text "altmult_accum0" (rect 154 0 262 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "dataa[7..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "dataa[7..0]" (rect 4 59 55 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 73 72)(line_width 3))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "datab[7..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "datab[7..0]" (rect 4 91 55 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 73 104)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "clock0" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "clock0" (rect 4 163 33 176)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 32 176)(line_width 1))
+	)
+	(port
+		(pt 400 88)
+		(output)
+		(text "result[31..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[31..0]" (rect 340 75 395 88)(font "Arial" (font_size 8)))
+		(line (pt 400 88)(pt 337 88)(line_width 3))
+	)
+	(drawing
+		(text "dataa: Signed" (rect 336 166 393 178)(font "Arial" ))
+		(text "datab: Signed" (rect 336 157 393 169)(font "Arial" ))
+		(text "MULT0" (rect 193 50 228 63)(font "Arial" (font_size 8)))
+		(text "c0" (rect 287 88 297 100)(font "Arial" ))
+		(line (pt 0 0)(pt 401 0)(line_width 1))
+		(line (pt 401 0)(pt 401 193)(line_width 1))
+		(line (pt 0 193)(pt 401 193)(line_width 1))
+		(line (pt 0 0)(pt 0 193)(line_width 1))
+		(line (pt 153 88)(pt 159 94)(line_width 3))
+		(line (pt 153 88)(pt 159 82)(line_width 3))
+		(line (pt 153 88)(pt 147 94)(line_width 3))
+		(line (pt 153 88)(pt 147 82)(line_width 3))
+		(line (pt 73 72)(pt 137 72)(line_width 3))
+		(line (pt 137 72)(pt 141 76)(line_width 3))
+		(line (pt 73 104)(pt 137 104)(line_width 3))
+		(line (pt 137 104)(pt 141 100)(line_width 3))
+		(line (pt 169 88)(pt 225 88)(line_width 3))
+		(line (pt 73 48)(pt 225 48)(line_width 1))
+		(line (pt 225 48)(pt 225 129)(line_width 1))
+		(line (pt 73 129)(pt 225 129)(line_width 1))
+		(line (pt 73 48)(pt 73 129)(line_width 1))
+		(line (pt 241 46)(pt 281 62)(line_width 1))
+		(line (pt 241 46)(pt 241 131)(line_width 1))
+		(line (pt 281 62)(pt 281 115)(line_width 1))
+		(line (pt 281 115)(pt 241 131)(line_width 1))
+		(line (pt 256 88)(pt 266 88)(line_width 3))
+		(line (pt 261 83)(pt 261 93)(line_width 3))
+		(line (pt 225 88)(pt 241 88)(line_width 3))
+		(line (pt 281 88)(pt 305 88)(line_width 3))
+		(line (pt 318 88)(pt 337 88)(line_width 3))
+		(line (pt 261 54)(pt 261 44)(line_width 1))
+		(line (pt 261 44)(pt 337 44)(line_width 1))
+		(line (pt 337 88)(pt 337 44)(line_width 1))
+		(line (pt 305 94)(pt 299 94)(line_width 1))
+		(line (pt 305 91)(pt 308 94)(line_width 1))
+		(line (pt 305 97)(pt 308 94)(line_width 1))
+		(line (pt 305 88)(pt 305 88)(line_width 1))
+		(line (pt 317 88)(pt 317 88)(line_width 1))
+		(line (pt 305 82)(pt 317 82)(line_width 1))
+		(line (pt 317 82)(pt 317 100)(line_width 1))
+		(line (pt 305 100)(pt 317 100)(line_width 1))
+		(line (pt 305 82)(pt 305 100)(line_width 1))
+		(circle (rect 137 72 169 104)(line_width 1))
+	)
+)

@@ -73,7 +73,7 @@ begin
             if si_ob = '1' then
 				sinx <= SINE_VALUES(0);
 			else
-				sinx <= si2ob(0);
+				sinx <= si2ob(SINE_VALUES(0));
 			end if;
 		end if;
 	end if;

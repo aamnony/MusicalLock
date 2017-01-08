@@ -27,7 +27,7 @@ applicable agreement for further details.
 	(text "DEFAULT VALUE" (rect 141 0 229 12)(font "Arial" ))
 	(text "DIV_BY" (rect 3 16 47 30)(font "Arial" (font_size 8)))
 	(text " NAME" (rect 108 0 142 12)(font "Arial" ))
-	(text "D\"665\"" (rect 141 16 162 30)(font "Arial" (font_size 8)))
+	(text "D\"195\"" (rect 141 16 162 30)(font "Arial" (font_size 8)))
 	(drawing
 		(line (pt 138 40)(pt 138 0)(line_width 1))
 	)
@@ -187,21 +187,56 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 568 160 752 288)
-	(text "sine_table" (rect 5 0 54 12)(font "Arial" ))
-	(text "inst6" (rect 8 112 31 124)(font "Arial" ))
+	(rect 128 216 272 312)
+	(text "clk_divider" (rect 5 0 58 12)(font "Arial" ))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
+		(text "resetN" (rect 21 27 54 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
 		(pt 0 48)
 		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 43 35 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "divided_clk" (rect 0 0 55 12)(font "Arial" ))
+		(text "divided_clk" (rect 68 27 123 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32)(line_width 1))
+	)
+	(parameter
+		"DIV"
+		"DIV_BY"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 128 80)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 120 184 304 216))
+)
+(symbol
+	(rect 568 160 752 288)
+	(text "sine_table" (rect 5 0 54 12)(font "Arial" ))
+	(text "inst1" (rect 8 112 31 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
 		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
-		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
+		(text "resetN" (rect 21 27 54 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 43 35 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
@@ -236,51 +271,6 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 168 112)(line_width 1))
 	)
 )
-(symbol
-	(rect 128 216 272 312)
-	(text "clk_divider" (rect 5 0 58 12)(font "Arial" ))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 1))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "resetN" (rect 0 0 33 12)(font "Arial" ))
-		(text "resetN" (rect 21 43 54 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "divided_clk" (rect 0 0 55 12)(font "Arial" ))
-		(text "divided_clk" (rect 68 27 123 39)(font "Arial" ))
-		(line (pt 144 32)(pt 128 32)(line_width 1))
-	)
-	(parameter
-		"DIV"
-		"DIV_BY"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(rectangle (rect 16 16 128 80)(line_width 1))
-	)
-	(annotation_block (parameter)(rect 128 184 312 216))
-)
-(connector
-	(text "clk" (rect 88 232 102 244)(font "Arial" ))
-	(pt 128 248)
-	(pt 80 248)
-)
-(connector
-	(text "resetN" (rect 88 248 121 260)(font "Arial" ))
-	(pt 128 264)
-	(pt 80 264)
-)
 (connector
 	(pt 272 248)
 	(pt 328 248)
@@ -309,16 +299,6 @@ applicable agreement for further details.
 	(pt 288 328)
 )
 (connector
-	(text "clk" (rect 520 176 534 188)(font "Arial" ))
-	(pt 568 192)
-	(pt 512 192)
-)
-(connector
-	(text "resetN" (rect 520 192 553 204)(font "Arial" ))
-	(pt 568 208)
-	(pt 512 208)
-)
-(connector
 	(text "enable" (rect 520 208 551 220)(font "Arial" ))
 	(pt 568 224)
 	(pt 512 224)
@@ -339,4 +319,24 @@ applicable agreement for further details.
 	(pt 472 240)
 	(pt 568 240)
 	(bus)
+)
+(connector
+	(text "clk" (rect 88 248 102 260)(font "Arial" ))
+	(pt 128 264)
+	(pt 80 264)
+)
+(connector
+	(text "resetN" (rect 88 232 121 244)(font "Arial" ))
+	(pt 80 248)
+	(pt 128 248)
+)
+(connector
+	(text "resetN" (rect 520 176 553 188)(font "Arial" ))
+	(pt 568 192)
+	(pt 512 192)
+)
+(connector
+	(text "clk" (rect 520 192 534 204)(font "Arial" ))
+	(pt 568 208)
+	(pt 512 208)
 )

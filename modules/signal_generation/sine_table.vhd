@@ -6,8 +6,8 @@ use work.utils.all;
 entity sine_table is
 port
 (
-    clk: in std_logic;
     resetN: in std_logic;
+    clk: in std_logic;
     enable: in std_logic;
     unsigned_x: in std_logic_vector(7 downto 0);
     si_ob: in std_logic; -- output format
