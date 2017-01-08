@@ -2,22 +2,42 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.325 ns
+From           : resetN
+To             : freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|zaccum_h4l:zaccum2|accum_utk:accum|acc_ffa[31]
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 9.738 ns
-From           : count_i[0]
-To             : count_plus_1[7]
+Actual Time    : 7.757 ns
+From           : freq_detector:inst|freq_compare:inst11|correct_freq
+To             : correct_freq
 From Clock     : clk
 To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -4.167 ns
+From           : ADC_DATA_CHIP[4]
+To             : MSS_XTRCT:inst6|MSS_Core:inst|ADC_DATA_USER_dup0_4_
+From Clock     : --
+To Clock       : clk
 Failed Paths   : 0
 
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 363.64 MHz ( period = 2.750 ns )
-From           : count_i[0]
-To             : count_i[6]
+Actual Time    : 106.53 MHz ( period = 9.387 ns )
+From           : freq_detector:inst|clk_divider:inst3|divided_clk_i
+To             : freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|zaccum_h4l:zaccum2|accum_utk:accum|acc_ffa[31]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0

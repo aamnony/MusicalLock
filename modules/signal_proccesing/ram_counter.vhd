@@ -24,10 +24,12 @@ begin
     if resetN = '0' then
         count_i <= (others => '0');
     elsif rising_edge(clk) then
-        if count_i >= MAX_COUNT then
-            count_i <= (others => '0');
-        else
-            count_i <= count_i + 1;
+		if enable = '1' then
+			if count_i >= MAX_COUNT then
+				count_i <= (others => '0');
+			else
+				count_i <= count_i + 1;
+			end if;
         end if;
     end if;
 end process;

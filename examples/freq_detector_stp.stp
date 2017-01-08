@@ -1,0 +1,238 @@
+<session jtag_chain="USB-Blaster [USB-0]" sof_file="../project.sof" top_level_entity="freq_detector_mss">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <global_info>
+    <single attribute="sof manager hidden" value="0"/>
+    <single attribute="active instance" value="0"/>
+    <single attribute="lock mode" value="36110"/>
+    <multi attribute="window position" size="9" value="1280,923,398,212,356,50,124,0,0"/>
+  </global_info>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2017/01/04 17:53:16  #0">
+      <clock name="clk" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="autocorr[0]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[10]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[11]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[12]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[13]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[14]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[15]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[16]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[17]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[18]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[19]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[1]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[20]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[21]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[22]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[23]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[24]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[25]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[26]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[27]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[28]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[29]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[2]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[30]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[31]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[3]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[4]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[5]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[6]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[7]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[8]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[9]" tap_mode="classic" type="output pin"/>
+          <wire name="clk_divider:10Hz|divided_clk" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="autocorr[0]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[10]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[11]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[12]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[13]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[14]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[15]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[16]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[17]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[18]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[19]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[1]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[20]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[21]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[22]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[23]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[24]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[25]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[26]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[27]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[28]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[29]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[2]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[30]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[31]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[3]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[4]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[5]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[6]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[7]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[8]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[9]" tap_mode="classic" type="output pin"/>
+          <wire name="clk_divider:10Hz|divided_clk" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="autocorr[0]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[10]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[11]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[12]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[13]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[14]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[15]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[16]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[17]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[18]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[19]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[1]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[20]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[21]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[22]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[23]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[24]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[25]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[26]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[27]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[28]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[29]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[2]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[30]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[31]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[3]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[4]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[5]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[6]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[7]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[8]" tap_mode="classic" type="output pin"/>
+          <wire name="autocorr[9]" tap_mode="classic" type="output pin"/>
+          <wire name="clk_divider:10Hz|divided_clk" tap_mode="classic" type="combinatorial"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="autocorr" order="lsb_to_msb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="autocorr[0]"/>
+            <net is_signal_inverted="no" name="autocorr[1]"/>
+            <net is_signal_inverted="no" name="autocorr[2]"/>
+            <net is_signal_inverted="no" name="autocorr[3]"/>
+            <net is_signal_inverted="no" name="autocorr[4]"/>
+            <net is_signal_inverted="no" name="autocorr[5]"/>
+            <net is_signal_inverted="no" name="autocorr[6]"/>
+            <net is_signal_inverted="no" name="autocorr[7]"/>
+            <net is_signal_inverted="no" name="autocorr[8]"/>
+            <net is_signal_inverted="no" name="autocorr[9]"/>
+            <net is_signal_inverted="no" name="autocorr[10]"/>
+            <net is_signal_inverted="no" name="autocorr[11]"/>
+            <net is_signal_inverted="no" name="autocorr[12]"/>
+            <net is_signal_inverted="no" name="autocorr[13]"/>
+            <net is_signal_inverted="no" name="autocorr[14]"/>
+            <net is_signal_inverted="no" name="autocorr[15]"/>
+            <net is_signal_inverted="no" name="autocorr[16]"/>
+            <net is_signal_inverted="no" name="autocorr[17]"/>
+            <net is_signal_inverted="no" name="autocorr[18]"/>
+            <net is_signal_inverted="no" name="autocorr[19]"/>
+            <net is_signal_inverted="no" name="autocorr[20]"/>
+            <net is_signal_inverted="no" name="autocorr[21]"/>
+            <net is_signal_inverted="no" name="autocorr[22]"/>
+            <net is_signal_inverted="no" name="autocorr[23]"/>
+            <net is_signal_inverted="no" name="autocorr[24]"/>
+            <net is_signal_inverted="no" name="autocorr[25]"/>
+            <net is_signal_inverted="no" name="autocorr[26]"/>
+            <net is_signal_inverted="no" name="autocorr[27]"/>
+            <net is_signal_inverted="no" name="autocorr[28]"/>
+            <net is_signal_inverted="no" name="autocorr[29]"/>
+            <net is_signal_inverted="no" name="autocorr[30]"/>
+            <net is_signal_inverted="no" name="autocorr[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="clk_divider:10Hz|divided_clk"/>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="autocorr" order="lsb_to_msb" radix="hex" state="collapse" type="output pin">
+            <net is_signal_inverted="no" name="autocorr[0]"/>
+            <net is_signal_inverted="no" name="autocorr[1]"/>
+            <net is_signal_inverted="no" name="autocorr[2]"/>
+            <net is_signal_inverted="no" name="autocorr[3]"/>
+            <net is_signal_inverted="no" name="autocorr[4]"/>
+            <net is_signal_inverted="no" name="autocorr[5]"/>
+            <net is_signal_inverted="no" name="autocorr[6]"/>
+            <net is_signal_inverted="no" name="autocorr[7]"/>
+            <net is_signal_inverted="no" name="autocorr[8]"/>
+            <net is_signal_inverted="no" name="autocorr[9]"/>
+            <net is_signal_inverted="no" name="autocorr[10]"/>
+            <net is_signal_inverted="no" name="autocorr[11]"/>
+            <net is_signal_inverted="no" name="autocorr[12]"/>
+            <net is_signal_inverted="no" name="autocorr[13]"/>
+            <net is_signal_inverted="no" name="autocorr[14]"/>
+            <net is_signal_inverted="no" name="autocorr[15]"/>
+            <net is_signal_inverted="no" name="autocorr[16]"/>
+            <net is_signal_inverted="no" name="autocorr[17]"/>
+            <net is_signal_inverted="no" name="autocorr[18]"/>
+            <net is_signal_inverted="no" name="autocorr[19]"/>
+            <net is_signal_inverted="no" name="autocorr[20]"/>
+            <net is_signal_inverted="no" name="autocorr[21]"/>
+            <net is_signal_inverted="no" name="autocorr[22]"/>
+            <net is_signal_inverted="no" name="autocorr[23]"/>
+            <net is_signal_inverted="no" name="autocorr[24]"/>
+            <net is_signal_inverted="no" name="autocorr[25]"/>
+            <net is_signal_inverted="no" name="autocorr[26]"/>
+            <net is_signal_inverted="no" name="autocorr[27]"/>
+            <net is_signal_inverted="no" name="autocorr[28]"/>
+            <net is_signal_inverted="no" name="autocorr[29]"/>
+            <net is_signal_inverted="no" name="autocorr[30]"/>
+            <net is_signal_inverted="no" name="autocorr[31]"/>
+          </bus>
+          <net is_signal_inverted="no" name="clk_divider:10Hz|divided_clk"/>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2017/01/04 17:53:16  #1" position="center" power_up_trigger_mode="false" record_data_gap="true" segment_size="1" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'clk_divider:10Hz|divided_clk' == rising edge
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>000000000000000000000000000000000
+            <pwr_up_transitional>000000000000000000000000000000000
+            </pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+</session>
