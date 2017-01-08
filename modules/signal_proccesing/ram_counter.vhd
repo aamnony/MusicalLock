@@ -14,7 +14,7 @@ port
 end entity;
 
 architecture arc_ram_counter of ram_counter is
-    constant MAX_COUNT: integer := 5;
+    constant MAX_COUNT: integer := 1000;
     signal count_i: std_logic_vector(9 downto 0);
 begin
     count <= count_i;

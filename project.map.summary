@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Jan 04 18:38:20 2017
+Analysis & Synthesis Status : Successful - Sun Jan 08 14:53:04 2017
 Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Full Version
 Revision Name : project
-Top-level Entity Name : freq_detector_mss
+Top-level Entity Name : sine_wave_generation_with_freq_detector
 Family : Cyclone II
-Total logic elements : 336
-    Total combinational functions : 275
-    Dedicated logic registers : 208
-Total registers : 215
-Total pins : 36
+Total logic elements : 1,201
+    Total combinational functions : 1,112
+    Dedicated logic registers : 378
+Total registers : 385
+Total pins : 62
 Total virtual pins : 0
-Total memory bits : 10,088
-Embedded Multiplier 9-bit elements : 1
+Total memory bits : 13,656
+Embedded Multiplier 9-bit elements : 2
 Total PLLs : 0

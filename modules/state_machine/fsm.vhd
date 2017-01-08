@@ -1,10 +1,3 @@
--- Quartus II VHDL Template
--- Four-State Moore State Machine
-
--- A Moore machine's outputs are dependent only on the current state.
--- The output is written only when the state changes.  (State
--- transitions are synchronous.)
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_signed.all;
@@ -26,15 +19,13 @@ end entity;
 architecture arc_fsm of fsm is
     constant PASSWORD: ranged_count_array(0 to 2) :=
     (
-        1, -30, 1
+        30, -40, 30
     );
     
-    -- Build an enumerated type for the state machine
-    type state_type is (reset, idle, check_data, bomb, success_state);
+    type state_type is (reset, idle, check_data, failure_state, success_state);
     
-    -- Register to hold the current state
     signal curr_state: state_type := reset;
-    --signal next_state: state_type := idle;
+
     signal p: integer := 0;
 begin
 
@@ -64,8 +55,8 @@ begin
             when check_data =>
                 success <= '0';
                 failure <= '0';
-                if (count = PASSWORD(p)) or (count<0) then
-                --if (count > PASSWORD(p)-10) and (count < PASSWORD(p)+10) then
+                --if (count = PASSWORD(p)) or (count<0) then
+                if (count > PASSWORD(p)-10) and (count < PASSWORD(p)+10) then
                     if p = PASSWORD'length - 1 then
                     --if p=1 then
                         curr_state <= success_state;
@@ -74,12 +65,12 @@ begin
                         p <= p + 1;
                     end if;
                 else
-                    curr_state <= bomb;
+                    curr_state <= failure_state;
                 end if;
-            when bomb =>
+            when failure_state =>
                 success <= '0';
                 failure <= '1';
-                curr_state <= bomb;
+                curr_state <= failure_state;
             when success_state =>
                 success <= '1';
                 failure <= '0';

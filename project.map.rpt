@@ -1,5 +1,5 @@
 Analysis & Synthesis report for project
-Wed Jan 04 18:38:20 2017
+Sun Jan 08 14:53:04 2017
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
@@ -15,28 +15,44 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis DSP Block Usage Summary
- 10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Source assignments for freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|ded_mult_nc31:ded_mult1|dffpipe_b3c:pre_result
- 15. Source assignments for freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component|altsyncram_pvr1:auto_generated
- 16. Source assignments for MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component|altsyncram_gp81:auto_generated
- 17. Source assignments for MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component|altsyncram_gp81:auto_generated
- 18. Source assignments for MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component|altsyncram_jp81:auto_generated
- 19. Parameter Settings for User Entity Instance: freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component
- 20. Parameter Settings for User Entity Instance: freq_detector:inst|BUSMUX:inst5
- 21. Parameter Settings for User Entity Instance: freq_detector:inst|clk_divider:inst3
- 22. Parameter Settings for User Entity Instance: freq_detector:inst|zero:inst6|lpm_constant:lpm_constant_component
- 23. Parameter Settings for User Entity Instance: freq_detector:inst|BUSMUX:inst7
- 24. Parameter Settings for User Entity Instance: freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component
- 25. Parameter Settings for User Entity Instance: clk_divider:10Hz
- 26. Parameter Settings for User Entity Instance: MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component
- 27. Parameter Settings for User Entity Instance: MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component
- 28. Parameter Settings for User Entity Instance: MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component
- 29. altmult_accum Parameter Settings by Entity Instance
- 30. altsyncram Parameter Settings by Entity Instance
- 31. Analysis & Synthesis Messages
+ 10. State Machine - |sine_wave_generation_with_freq_detector|fsm:inst9|curr_state
+ 11. State Machine - |sine_wave_generation_with_freq_detector|keyboard:inst4|bitrec:inst|present_state
+ 12. State Machine - |sine_wave_generation_with_freq_detector|keyboard:inst4|byterec:inst1|present_state
+ 13. Registers Removed During Synthesis
+ 14. Removed Registers Triggering Further Register Optimizations
+ 15. General Register Statistics
+ 16. Inverted Register Statistics
+ 17. Registers Packed Into Inferred Megafunctions
+ 18. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 19. Source assignments for freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|ded_mult_nc31:ded_mult1|dffpipe_b3c:pre_result
+ 20. Source assignments for freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component|altsyncram_pvr1:auto_generated
+ 21. Source assignments for freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|ded_mult_nc31:ded_mult1|dffpipe_b3c:pre_result
+ 22. Source assignments for MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component|altsyncram_gp81:auto_generated
+ 23. Source assignments for MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component|altsyncram_gp81:auto_generated
+ 24. Source assignments for MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component|altsyncram_jp81:auto_generated
+ 25. Source assignments for sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component
+ 26. Source assignments for sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0|altsyncram_7p21:auto_generated
+ 27. Parameter Settings for User Entity Instance: freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component
+ 28. Parameter Settings for User Entity Instance: freq_detector:inst|BUSMUX:inst5
+ 29. Parameter Settings for User Entity Instance: freq_detector:inst|clk_divider:inst3
+ 30. Parameter Settings for User Entity Instance: freq_detector:inst|zero:inst6|lpm_constant:lpm_constant_component
+ 31. Parameter Settings for User Entity Instance: freq_detector:inst|BUSMUX:inst7
+ 32. Parameter Settings for User Entity Instance: freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component
+ 33. Parameter Settings for User Entity Instance: freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component
+ 34. Parameter Settings for User Entity Instance: freq_detector:inst|BUSMUX:inst12
+ 35. Parameter Settings for User Entity Instance: clk_divider:10Hz
+ 36. Parameter Settings for User Entity Instance: MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component
+ 37. Parameter Settings for User Entity Instance: MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component
+ 38. Parameter Settings for User Entity Instance: MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component
+ 39. Parameter Settings for User Entity Instance: sine_wave:inst5
+ 40. Parameter Settings for User Entity Instance: sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component
+ 41. Parameter Settings for User Entity Instance: sine_wave:inst5|clk_divider:inst
+ 42. Parameter Settings for User Entity Instance: keyboard:inst4|lpf:inst2
+ 43. Parameter Settings for Inferred Entity Instance: sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0
+ 44. Parameter Settings for Inferred Entity Instance: freq_detector:inst|freq_compare:inst11|lpm_divide:Div0
+ 45. altmult_accum Parameter Settings by Entity Instance
+ 46. altsyncram Parameter Settings by Entity Instance
+ 47. Analysis & Synthesis Messages
 
 
 
@@ -62,99 +78,99 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jan 04 18:38:20 2017         ;
+; Analysis & Synthesis Status        ; Successful - Sun Jan 08 14:53:04 2017         ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
 ; Revision Name                      ; project                                       ;
-; Top-level Entity Name              ; freq_detector_mss                             ;
+; Top-level Entity Name              ; sine_wave_generation_with_freq_detector       ;
 ; Family                             ; Cyclone II                                    ;
-; Total logic elements               ; 336                                           ;
-;     Total combinational functions  ; 275                                           ;
-;     Dedicated logic registers      ; 208                                           ;
-; Total registers                    ; 215                                           ;
-; Total pins                         ; 36                                            ;
+; Total logic elements               ; 1,201                                         ;
+;     Total combinational functions  ; 1,112                                         ;
+;     Dedicated logic registers      ; 378                                           ;
+; Total registers                    ; 385                                           ;
+; Total pins                         ; 62                                            ;
 ; Total virtual pins                 ; 0                                             ;
-; Total memory bits                  ; 10,088                                        ;
-; Embedded Multiplier 9-bit elements ; 1                                             ;
+; Total memory bits                  ; 13,656                                        ;
+; Embedded Multiplier 9-bit elements ; 2                                             ;
 ; Total PLLs                         ; 0                                             ;
 +------------------------------------+-----------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP2C35F672C6       ;                    ;
-; Top-level entity name                                                      ; freq_detector_mss  ; project            ;
-; Family name                                                                ; Cyclone II         ; Stratix II         ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
-; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                             ;
++----------------------------------------------------------------------------+-----------------------------------------+--------------------+
+; Option                                                                     ; Setting                                 ; Default Value      ;
++----------------------------------------------------------------------------+-----------------------------------------+--------------------+
+; Device                                                                     ; EP2C35F672C6                            ;                    ;
+; Top-level entity name                                                      ; sine_wave_generation_with_freq_detector ; project            ;
+; Family name                                                                ; Cyclone II                              ; Stratix II         ;
+; Use smart compilation                                                      ; Off                                     ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                      ; On                 ;
+; Enable compact report table                                                ; Off                                     ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                                    ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                                     ; Off                ;
+; Preserve fewer node names                                                  ; On                                      ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                                     ; Off                ;
+; Verilog Version                                                            ; Verilog_2001                            ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993                               ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                                    ; Auto               ;
+; Safe State Machine                                                         ; Off                                     ; Off                ;
+; Extract Verilog State Machines                                             ; On                                      ; On                 ;
+; Extract VHDL State Machines                                                ; On                                      ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                                     ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                                    ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                                     ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                                      ; On                 ;
+; Parallel Synthesis                                                         ; On                                      ; On                 ;
+; DSP Block Balancing                                                        ; Auto                                    ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                                      ; On                 ;
+; Power-Up Don't Care                                                        ; On                                      ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                                     ; Off                ;
+; Remove Duplicate Registers                                                 ; On                                      ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                                     ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                                     ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                                     ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                                     ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                                     ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                                      ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                                     ; Off                ;
+; Optimization Technique                                                     ; Balanced                                ; Balanced           ;
+; Carry Chain Length                                                         ; 70                                      ; 70                 ;
+; Auto Carry Chains                                                          ; On                                      ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                                      ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                                     ; Off                ;
+; Auto ROM Replacement                                                       ; On                                      ; On                 ;
+; Auto RAM Replacement                                                       ; On                                      ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                                    ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                                      ; On                 ;
+; Strict RAM Replacement                                                     ; Off                                     ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                                      ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                                     ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                                     ; Off                ;
+; Auto Resource Sharing                                                      ; Off                                     ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                                     ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                                     ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                                     ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                                      ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                                     ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                                     ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                                      ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                                     ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                                       ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation                      ; Normal compilation ;
+; HDL message level                                                          ; Level2                                  ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                                     ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                                    ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                                     ; 100                ;
+; Clock MUX Protection                                                       ; On                                      ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                                     ; Off                ;
+; Block Design Naming                                                        ; Auto                                    ; Auto               ;
+; SDC constraint protection                                                  ; Off                                     ; Off                ;
+; Synthesis Effort                                                           ; Auto                                    ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                                      ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium                                  ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                                    ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                                      ; On                 ;
++----------------------------------------------------------------------------+-----------------------------------------+--------------------+
 
 
 +------------------------------------------+
@@ -174,38 +190,63 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+----------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                      ;
-+----------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+
-; modules/misc/clk_divider.vhd                 ; yes             ; User VHDL File                     ; C:/Users/sab1/Desktop/project_4_1_17/modules/misc/clk_divider.vhd                 ;
-; modules/misc/utils.vhd                       ; yes             ; User VHDL File                     ; C:/Users/sab1/Desktop/project_4_1_17/modules/misc/utils.vhd                       ;
-; modules/signal_proccesing/ram_counter.vhd    ; yes             ; User VHDL File                     ; C:/Users/sab1/Desktop/project_4_1_17/modules/signal_proccesing/ram_counter.vhd    ;
-; modules/signal_proccesing/freq_detector.bdf  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/sab1/Desktop/project_4_1_17/modules/signal_proccesing/freq_detector.bdf  ;
-; modules/signal_proccesing/altmult_accum0.vhd ; yes             ; User Wizard-Generated File         ; C:/Users/sab1/Desktop/project_4_1_17/modules/signal_proccesing/altmult_accum0.vhd ;
-; modules/signal_proccesing/zero.vhd           ; yes             ; User Wizard-Generated File         ; C:/Users/sab1/Desktop/project_4_1_17/modules/signal_proccesing/zero.vhd           ;
-; modules/signal_proccesing/freq_compare.vhd   ; yes             ; User VHDL File                     ; C:/Users/sab1/Desktop/project_4_1_17/modules/signal_proccesing/freq_compare.vhd   ;
-; examples/freq_detector_mss.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/sab1/Desktop/project_4_1_17/examples/freq_detector_mss.bdf               ;
-; modules/misc/ob_si_conv.vhd                  ; yes             ; User VHDL File                     ; C:/Users/sab1/Desktop/project_4_1_17/modules/misc/ob_si_conv.vhd                  ;
-; modules/MSS/MSS_Core.edf                     ; yes             ; User EDIF File                     ; C:/Users/sab1/Desktop/project_4_1_17/modules/MSS/MSS_Core.edf                     ;
-; modules/MSS/MSS_XTRCT.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/sab1/Desktop/project_4_1_17/modules/MSS/MSS_XTRCT.bdf                    ;
-; modules/signal_proccesing/lpm_ram_dp0.vhd    ; yes             ; User Wizard-Generated File         ; C:/Users/sab1/Desktop/project_4_1_17/modules/signal_proccesing/lpm_ram_dp0.vhd    ;
-; altmult_accum.tdf                            ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/altmult_accum.tdf                 ;
-; db/mult_accum_q1d2.tdf                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/mult_accum_q1d2.tdf                       ;
-; db/ded_mult_nc31.tdf                         ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/ded_mult_nc31.tdf                         ;
-; db/dffpipe_b3c.tdf                           ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/dffpipe_b3c.tdf                           ;
-; db/zaccum_h4l.tdf                            ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/zaccum_h4l.tdf                            ;
-; db/accum_utk.tdf                             ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/accum_utk.tdf                             ;
-; busmux.tdf                                   ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/busmux.tdf                        ;
-; lpm_mux.tdf                                  ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.tdf                       ;
-; db/mux_smc.tdf                               ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/mux_smc.tdf                               ;
-; lpm_constant.tdf                             ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_constant.tdf                  ;
-; altsyncram.tdf                               ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf                    ;
-; db/altsyncram_pvr1.tdf                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/altsyncram_pvr1.tdf                       ;
-; db/altsyncram_gp81.tdf                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/altsyncram_gp81.tdf                       ;
-; db/altsyncram_jp81.tdf                       ; yes             ; Auto-Generated Megafunction        ; C:/Users/sab1/Desktop/project_4_1_17/db/altsyncram_jp81.tdf                       ;
-+----------------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                  ;
++----------------------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path                         ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                       ;
++----------------------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------+
+; modules/signal_proccesing/altmult_accum0.vhd             ; yes             ; User Wizard-Generated File                            ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_proccesing/altmult_accum0.vhd                ;
+; modules/signal_proccesing/freq_compare.vhd               ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_proccesing/freq_compare.vhd                  ;
+; modules/signal_proccesing/freq_detector.bdf              ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_proccesing/freq_detector.bdf                 ;
+; modules/signal_proccesing/lpm_ram_dp0.vhd                ; yes             ; User Wizard-Generated File                            ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_proccesing/lpm_ram_dp0.vhd                   ;
+; modules/signal_proccesing/ram_counter.vhd                ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_proccesing/ram_counter.vhd                   ;
+; modules/signal_proccesing/zero.vhd                       ; yes             ; User Wizard-Generated File                            ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_proccesing/zero.vhd                          ;
+; modules/misc/clk_divider.vhd                             ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/misc/clk_divider.vhd                                ;
+; modules/MSS/MSS_Core.edf                                 ; yes             ; User EDIF File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/MSS/MSS_Core.edf                                    ;
+; modules/MSS/MSS_XTRCT.bdf                                ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/MSS/MSS_XTRCT.bdf                                   ;
+; modules/misc/ob_si_conv.vhd                              ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/misc/ob_si_conv.vhd                                 ;
+; modules/misc/utils.vhd                                   ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/misc/utils.vhd                                      ;
+; examples/sine_wave_generation_with_freq_detector.bdf     ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/sab1/Desktop/project_8_1_17_2/examples/sine_wave_generation_with_freq_detector.bdf        ;
+; modules/keyboard/bitrec.vhd                              ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/keyboard/bitrec.vhd                                 ;
+; modules/keyboard/byterec.vhd                             ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/keyboard/byterec.vhd                                ;
+; modules/keyboard/key_pressed_detector.vhd                ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/keyboard/key_pressed_detector.vhd                   ;
+; modules/keyboard/keyboard.bdf                            ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/keyboard/keyboard.bdf                               ;
+; modules/keyboard/lpf.vhd                                 ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/keyboard/lpf.vhd                                    ;
+; modules/signal_generation/counter_256.vhd                ; yes             ; User Wizard-Generated File                            ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_generation/counter_256.vhd                   ;
+; modules/signal_generation/sine_table.vhd                 ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_generation/sine_table.vhd                    ;
+; modules/signal_generation/sine_wave.bdf                  ; yes             ; User Block Diagram/Schematic File                     ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/signal_generation/sine_wave.bdf                     ;
+; modules/state_machine/fsm.vhd                            ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/state_machine/fsm.vhd                               ;
+; modules/state_machine/sound_counter.vhd                  ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/state_machine/sound_counter.vhd                     ;
+; modules/display_sounds/ranged_count_to_ss.vhd            ; yes             ; User VHDL File                                        ; C:/Users/sab1/Desktop/project_8_1_17_2/modules/display_sounds/ranged_count_to_ss.vhd               ;
+; altmult_accum.tdf                                        ; yes             ; Megafunction                                          ; c:/altera/91sp2/quartus/libraries/megafunctions/altmult_accum.tdf                                  ;
+; db/mult_accum_q1d2.tdf                                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/mult_accum_q1d2.tdf                                      ;
+; db/ded_mult_nc31.tdf                                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/ded_mult_nc31.tdf                                        ;
+; db/dffpipe_b3c.tdf                                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/dffpipe_b3c.tdf                                          ;
+; db/zaccum_h4l.tdf                                        ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/zaccum_h4l.tdf                                           ;
+; db/accum_utk.tdf                                         ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/accum_utk.tdf                                            ;
+; busmux.tdf                                               ; yes             ; Megafunction                                          ; c:/altera/91sp2/quartus/libraries/megafunctions/busmux.tdf                                         ;
+; lpm_mux.tdf                                              ; yes             ; Megafunction                                          ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.tdf                                        ;
+; db/mux_smc.tdf                                           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/mux_smc.tdf                                              ;
+; lpm_constant.tdf                                         ; yes             ; Megafunction                                          ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_constant.tdf                                   ;
+; altsyncram.tdf                                           ; yes             ; Megafunction                                          ; c:/altera/91sp2/quartus/libraries/megafunctions/altsyncram.tdf                                     ;
+; db/altsyncram_pvr1.tdf                                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/altsyncram_pvr1.tdf                                      ;
+; db/altsyncram_gp81.tdf                                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/altsyncram_gp81.tdf                                      ;
+; PDAC_conv_table.hex                                      ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; PDAC_conv_table.hex                                                                                ;
+; db/altsyncram_jp81.tdf                                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/altsyncram_jp81.tdf                                      ;
+; SDAC_conv_table.hex                                      ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; SDAC_conv_table.hex                                                                                ;
+; lpm_counter.tdf                                          ; yes             ; Megafunction                                          ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_counter.tdf                                    ;
+; db/cntr_1cj.tdf                                          ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/cntr_1cj.tdf                                             ;
+; db/altsyncram_7p21.tdf                                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/altsyncram_7p21.tdf                                      ;
+; project.sine_wave_generation_with_freq_detector0.rtl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/sab1/Desktop/project_8_1_17_2/db/project.sine_wave_generation_with_freq_detector0.rtl.mif ;
+; lpm_divide.tdf                                           ; yes             ; Megafunction                                          ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_divide.tdf                                     ;
+; db/lpm_divide_6so.tdf                                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/lpm_divide_6so.tdf                                       ;
+; db/abs_divider_jbg.tdf                                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/abs_divider_jbg.tdf                                      ;
+; db/alt_u_div_i2f.tdf                                     ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/alt_u_div_i2f.tdf                                        ;
+; db/add_sub_lkc.tdf                                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/add_sub_lkc.tdf                                          ;
+; db/add_sub_mkc.tdf                                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/add_sub_mkc.tdf                                          ;
+; db/lpm_abs_fq9.tdf                                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/lpm_abs_fq9.tdf                                          ;
+; db/lpm_abs_0s9.tdf                                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/sab1/Desktop/project_8_1_17_2/db/lpm_abs_0s9.tdf                                          ;
++----------------------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -213,83 +254,114 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 336   ;
+; Estimated Total logic elements              ; 1,201 ;
 ;                                             ;       ;
-; Total combinational functions               ; 275   ;
+; Total combinational functions               ; 1112  ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 67    ;
-;     -- 3 input functions                    ; 59    ;
-;     -- <=2 input functions                  ; 149   ;
+;     -- 4 input functions                    ; 230   ;
+;     -- 3 input functions                    ; 353   ;
+;     -- <=2 input functions                  ; 529   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 178   ;
-;     -- arithmetic mode                      ; 97    ;
+;     -- normal mode                          ; 675   ;
+;     -- arithmetic mode                      ; 437   ;
 ;                                             ;       ;
-; Total registers                             ; 215   ;
-;     -- Dedicated logic registers            ; 208   ;
+; Total registers                             ; 385   ;
+;     -- Dedicated logic registers            ; 378   ;
 ;     -- I/O registers                        ; 7     ;
 ;                                             ;       ;
-; I/O pins                                    ; 36    ;
-; Total memory bits                           ; 10088 ;
-; Embedded Multiplier 9-bit elements          ; 1     ;
+; I/O pins                                    ; 62    ;
+; Total memory bits                           ; 13656 ;
+; Embedded Multiplier 9-bit elements          ; 2     ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 247   ;
-; Total fan-out                               ; 1799  ;
-; Average fan-out                             ; 3.20  ;
+; Maximum fan-out                             ; 423   ;
+; Total fan-out                               ; 4775  ;
+; Average fan-out                             ; 2.98  ;
 +---------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                          ;
-+--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                ; Library Name ;
-+--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |freq_detector_mss                                           ; 275 (0)           ; 208 (0)      ; 10088       ; 1            ; 1       ; 0         ; 36   ; 0            ; |freq_detector_mss                                                                                                                                                 ; work         ;
-;    |MSS_XTRCT:inst6|                                         ; 70 (0)            ; 111 (0)      ; 2080        ; 0            ; 0       ; 0         ; 33   ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6                                                                                                                                 ;              ;
-;       |MSS_Core:inst|                                        ; 70 (12)           ; 111 (18)     ; 2080        ; 0            ; 0       ; 0         ; 33   ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst                                                                                                                   ;              ;
-;          |P_DAC_Interface:U3|                                ; 7 (7)             ; 34 (34)      ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3                                                                                                ;              ;
-;             |altsyncram:U1_altsyncram_component|             ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component                                                             ;              ;
-;                |altsyncram_gp81:auto_generated|              ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component|altsyncram_gp81:auto_generated                              ;              ;
-;             |altsyncram:U2_altsyncram_component|             ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component                                                             ;              ;
-;                |altsyncram_gp81:auto_generated|              ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component|altsyncram_gp81:auto_generated                              ;              ;
-;          |S_DAC_Interface:U4|                                ; 43 (43)           ; 51 (51)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4                                                                                                ;              ;
-;             |altsyncram:U2_altsyncram_component|             ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component                                                             ;              ;
-;                |altsyncram_jp81:auto_generated|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component|altsyncram_jp81:auto_generated                              ;              ;
-;          |modgen_counter_8_0:U1_modgen_counter_PDAC_COUNTER| ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|MSS_XTRCT:inst6|MSS_Core:inst|modgen_counter_8_0:U1_modgen_counter_PDAC_COUNTER                                                                 ;              ;
-;    |clk_divider:10Hz|                                        ; 61 (61)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|clk_divider:10Hz                                                                                                                                ;              ;
-;    |freq_detector:inst|                                      ; 144 (1)           ; 70 (0)       ; 8008        ; 1            ; 1       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst                                                                                                                              ;              ;
-;       |altmult_accum0:inst1|                                 ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|altmult_accum0:inst1                                                                                                         ;              ;
-;          |altmult_accum:altmult_accum_component|             ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component                                                                   ;              ;
-;             |mult_accum_q1d2:auto_generated|                 ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated                                    ;              ;
-;                |ded_mult_nc31:ded_mult1|                     ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|ded_mult_nc31:ded_mult1            ;              ;
-;                |zaccum_h4l:zaccum2|                          ; 32 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|zaccum_h4l:zaccum2                 ;              ;
-;                   |accum_utk:accum|                          ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|zaccum_h4l:zaccum2|accum_utk:accum ;              ;
-;       |busmux:inst5|                                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|busmux:inst5                                                                                                                 ;              ;
-;          |lpm_mux:$00000|                                    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|busmux:inst5|lpm_mux:$00000                                                                                                  ;              ;
-;             |mux_smc:auto_generated|                         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|busmux:inst5|lpm_mux:$00000|mux_smc:auto_generated                                                                           ;              ;
-;       |busmux:inst7|                                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|busmux:inst7                                                                                                                 ;              ;
-;          |lpm_mux:$00000|                                    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|busmux:inst7|lpm_mux:$00000                                                                                                  ;              ;
-;             |mux_smc:auto_generated|                         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|busmux:inst7|lpm_mux:$00000|mux_smc:auto_generated                                                                           ;              ;
-;       |clk_divider:inst3|                                    ; 61 (61)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|clk_divider:inst3                                                                                                            ;              ;
-;       |freq_compare:inst11|                                  ; 11 (11)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|freq_compare:inst11                                                                                                          ;              ;
-;       |lpm_ram_dp0:inst2|                                    ; 0 (0)             ; 0 (0)        ; 8008        ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|lpm_ram_dp0:inst2                                                                                                            ;              ;
-;          |altsyncram:altsyncram_component|                   ; 0 (0)             ; 0 (0)        ; 8008        ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component                                                                            ;              ;
-;             |altsyncram_pvr1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 8008        ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component|altsyncram_pvr1:auto_generated                                             ;              ;
-;       |ram_counter:inst|                                     ; 23 (23)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |freq_detector_mss|freq_detector:inst|ram_counter:inst                                                                                                             ;              ;
-+--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                      ; Library Name ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |sine_wave_generation_with_freq_detector                     ; 1112 (0)          ; 378 (0)      ; 13656       ; 2            ; 2       ; 0         ; 62   ; 0            ; |sine_wave_generation_with_freq_detector                                                                                                                                                 ; work         ;
+;    |MSS_XTRCT:inst6|                                         ; 70 (0)            ; 111 (0)      ; 4112        ; 0            ; 0       ; 0         ; 33   ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6                                                                                                                                 ;              ;
+;       |MSS_Core:inst|                                        ; 70 (12)           ; 111 (18)     ; 4112        ; 0            ; 0       ; 0         ; 33   ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst                                                                                                                   ;              ;
+;          |P_DAC_Interface:U3|                                ; 7 (7)             ; 34 (34)      ; 2064        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3                                                                                                ;              ;
+;             |altsyncram:U1_altsyncram_component|             ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component                                                             ;              ;
+;                |altsyncram_gp81:auto_generated|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component|altsyncram_gp81:auto_generated                              ;              ;
+;             |altsyncram:U2_altsyncram_component|             ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component                                                             ;              ;
+;                |altsyncram_gp81:auto_generated|              ; 0 (0)             ; 0 (0)        ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component|altsyncram_gp81:auto_generated                              ;              ;
+;          |S_DAC_Interface:U4|                                ; 43 (43)           ; 51 (51)      ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4                                                                                                ;              ;
+;             |altsyncram:U2_altsyncram_component|             ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component                                                             ;              ;
+;                |altsyncram_jp81:auto_generated|              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component|altsyncram_jp81:auto_generated                              ;              ;
+;          |modgen_counter_8_0:U1_modgen_counter_PDAC_COUNTER| ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|MSS_XTRCT:inst6|MSS_Core:inst|modgen_counter_8_0:U1_modgen_counter_PDAC_COUNTER                                                                 ;              ;
+;    |clk_divider:10Hz|                                        ; 59 (59)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|clk_divider:10Hz                                                                                                                                ;              ;
+;    |freq_detector:inst|                                      ; 711 (1)           ; 102 (0)      ; 8008        ; 2            ; 2       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst                                                                                                                              ;              ;
+;       |altmult_accum0:inst1|                                 ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst1                                                                                                         ;              ;
+;          |altmult_accum:altmult_accum_component|             ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component                                                                   ;              ;
+;             |mult_accum_q1d2:auto_generated|                 ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated                                    ;              ;
+;                |ded_mult_nc31:ded_mult1|                     ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|ded_mult_nc31:ded_mult1            ;              ;
+;                |zaccum_h4l:zaccum2|                          ; 32 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|zaccum_h4l:zaccum2                 ;              ;
+;                   |accum_utk:accum|                          ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|zaccum_h4l:zaccum2|accum_utk:accum ;              ;
+;       |altmult_accum0:inst8|                                 ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst8                                                                                                         ;              ;
+;          |altmult_accum:altmult_accum_component|             ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component                                                                   ;              ;
+;             |mult_accum_q1d2:auto_generated|                 ; 32 (0)            ; 32 (0)       ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated                                    ;              ;
+;                |ded_mult_nc31:ded_mult1|                     ; 0 (0)             ; 0 (0)        ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|ded_mult_nc31:ded_mult1            ;              ;
+;                |zaccum_h4l:zaccum2|                          ; 32 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|zaccum_h4l:zaccum2                 ;              ;
+;                   |accum_utk:accum|                          ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|zaccum_h4l:zaccum2|accum_utk:accum ;              ;
+;       |busmux:inst12|                                        ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst12                                                                                                                ;              ;
+;          |lpm_mux:$00000|                                    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst12|lpm_mux:$00000                                                                                                 ;              ;
+;             |mux_smc:auto_generated|                         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst12|lpm_mux:$00000|mux_smc:auto_generated                                                                          ;              ;
+;       |busmux:inst5|                                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst5                                                                                                                 ;              ;
+;          |lpm_mux:$00000|                                    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst5|lpm_mux:$00000                                                                                                  ;              ;
+;             |mux_smc:auto_generated|                         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst5|lpm_mux:$00000|mux_smc:auto_generated                                                                           ;              ;
+;       |busmux:inst7|                                         ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst7                                                                                                                 ;              ;
+;          |lpm_mux:$00000|                                    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst7|lpm_mux:$00000                                                                                                  ;              ;
+;             |mux_smc:auto_generated|                         ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|busmux:inst7|lpm_mux:$00000|mux_smc:auto_generated                                                                           ;              ;
+;       |clk_divider:inst3|                                    ; 60 (60)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|clk_divider:inst3                                                                                                            ;              ;
+;       |freq_compare:inst11|                                  ; 540 (41)          ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|freq_compare:inst11                                                                                                          ;              ;
+;          |lpm_divide:Div0|                                   ; 499 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|freq_compare:inst11|lpm_divide:Div0                                                                                          ;              ;
+;             |lpm_divide_6so:auto_generated|                  ; 499 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|freq_compare:inst11|lpm_divide:Div0|lpm_divide_6so:auto_generated                                                            ;              ;
+;                |abs_divider_jbg:divider|                     ; 499 (60)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|freq_compare:inst11|lpm_divide:Div0|lpm_divide_6so:auto_generated|abs_divider_jbg:divider                                    ;              ;
+;                   |alt_u_div_i2f:divider|                    ; 407 (407)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|freq_compare:inst11|lpm_divide:Div0|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider              ;              ;
+;                   |lpm_abs_0s9:my_abs_num|                   ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|freq_compare:inst11|lpm_divide:Div0|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_0s9:my_abs_num             ;              ;
+;       |lpm_ram_dp0:inst2|                                    ; 0 (0)             ; 0 (0)        ; 8008        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|lpm_ram_dp0:inst2                                                                                                            ;              ;
+;          |altsyncram:altsyncram_component|                   ; 0 (0)             ; 0 (0)        ; 8008        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component                                                                            ;              ;
+;             |altsyncram_pvr1:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 8008        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component|altsyncram_pvr1:auto_generated                                             ;              ;
+;       |ram_counter:inst|                                     ; 22 (22)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|freq_detector:inst|ram_counter:inst                                                                                                             ;              ;
+;    |fsm:inst9|                                               ; 56 (56)           ; 39 (39)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|fsm:inst9                                                                                                                                       ;              ;
+;    |keyboard:inst4|                                          ; 44 (0)            ; 44 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|keyboard:inst4                                                                                                                                  ;              ;
+;       |bitrec:inst|                                          ; 23 (23)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|keyboard:inst4|bitrec:inst                                                                                                                      ;              ;
+;       |byterec:inst1|                                        ; 18 (18)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|keyboard:inst4|byterec:inst1                                                                                                                    ;              ;
+;       |key_pressed_detector:inst3|                           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|keyboard:inst4|key_pressed_detector:inst3                                                                                                       ;              ;
+;       |lpf:inst2|                                            ; 2 (2)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|keyboard:inst4|lpf:inst2                                                                                                                        ;              ;
+;    |ranged_count_to_ss:inst1|                                ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|ranged_count_to_ss:inst1                                                                                                                        ;              ;
+;    |sine_wave:inst5|                                         ; 92 (0)            ; 39 (0)       ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sine_wave:inst5                                                                                                                                 ;              ;
+;       |clk_divider:inst|                                     ; 61 (61)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sine_wave:inst5|clk_divider:inst                                                                                                                ;              ;
+;       |counter_256:inst3|                                    ; 9 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sine_wave:inst5|counter_256:inst3                                                                                                               ;              ;
+;          |lpm_counter:lpm_counter_component|                 ; 9 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component                                                                             ;              ;
+;             |cntr_1cj:auto_generated|                        ; 9 (9)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component|cntr_1cj:auto_generated                                                     ;              ;
+;       |sine_table:inst1|                                     ; 22 (22)           ; 4 (4)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sine_wave:inst5|sine_table:inst1                                                                                                                ;              ;
+;          |altsyncram:Mux6_rtl_0|                             ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0                                                                                          ;              ;
+;             |altsyncram_7p21:auto_generated|                 ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0|altsyncram_7p21:auto_generated                                                           ;              ;
+;    |sound_counter:inst11|                                    ; 42 (42)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |sine_wave_generation_with_freq_detector|sound_counter:inst11                                                                                                                            ;              ;
++--------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                 ;
-+-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------+
-; Name                                                                                                                          ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                 ;
-+-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------+
-; MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component|altsyncram_gp81:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048 ; PDAC_conv_table.hex ;
-; MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component|altsyncram_gp81:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048 ; PDAC_conv_table.hex ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component|altsyncram_jp81:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048 ; SDAC_conv_table.hex ;
-; freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component|altsyncram_pvr1:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 1001         ; 8            ; 1001         ; 8            ; 8008 ; None                ;
-+-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+---------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------------------+
+; Name                                                                                                                          ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF                                                      ;
++-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------------------+
+; MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component|altsyncram_gp81:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048 ; PDAC_conv_table.hex                                      ;
+; MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component|altsyncram_gp81:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048 ; PDAC_conv_table.hex                                      ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component|altsyncram_jp81:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048 ; SDAC_conv_table.hex                                      ;
+; freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component|altsyncram_pvr1:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 1001         ; 8            ; 1001         ; 8            ; 8008 ; None                                                     ;
+; sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0|altsyncram_7p21:auto_generated|ALTSYNCRAM                              ; AUTO ; ROM              ; 256          ; 6            ; --           ; --           ; 1536 ; project.sine_wave_generation_with_freq_detector0.rtl.mif ;
++-------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+----------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -297,11 +369,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+-------------+
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
-; Simple Multipliers (9-bit)            ; 1           ;
+; Simple Multipliers (9-bit)            ; 2           ;
 ; Simple Multipliers (18-bit)           ; 0           ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 1           ;
-; Signed Embedded Multipliers           ; 1           ;
+; Embedded Multiplier 9-bit elements    ; 2           ;
+; Signed Embedded Multipliers           ; 2           ;
 ; Unsigned Embedded Multipliers         ; 0           ;
 ; Mixed Sign Embedded Multipliers       ; 0           ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
@@ -310,28 +382,86 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                  ;
-+------------------------------------------------------------+----------------------------------------+
-; Register name                                              ; Reason for Removal                     ;
-+------------------------------------------------------------+----------------------------------------+
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx44356z2 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx44356z3 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx39371z2 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx39371z3 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx41365z2 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx41365z3 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx42362z2 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx42362z3 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx43359z2 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx43359z3 ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z1  ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z5  ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z4  ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z3  ; Stuck at GND due to stuck port data_in ;
-; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z2  ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 15                     ;                                        ;
-+------------------------------------------------------------+----------------------------------------+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |sine_wave_generation_with_freq_detector|fsm:inst9|curr_state                                                               ;
++--------------------------+--------------------------+--------------------------+-----------------------+-----------------+------------------+
+; Name                     ; curr_state.success_state ; curr_state.failure_state ; curr_state.check_data ; curr_state.idle ; curr_state.reset ;
++--------------------------+--------------------------+--------------------------+-----------------------+-----------------+------------------+
+; curr_state.reset         ; 0                        ; 0                        ; 0                     ; 0               ; 0                ;
+; curr_state.idle          ; 0                        ; 0                        ; 0                     ; 1               ; 1                ;
+; curr_state.check_data    ; 0                        ; 0                        ; 1                     ; 0               ; 1                ;
+; curr_state.failure_state ; 0                        ; 1                        ; 0                     ; 0               ; 1                ;
+; curr_state.success_state ; 1                        ; 0                        ; 0                     ; 0               ; 1                ;
++--------------------------+--------------------------+--------------------------+-----------------------+-----------------+------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |sine_wave_generation_with_freq_detector|keyboard:inst4|bitrec:inst|present_state                                               ;
++-------------------------+-------------------------+-------------------------+----------------------+-----------------------+--------------------+
+; Name                    ; present_state.ValidData ; present_state.CheckData ; present_state.LowClk ; present_state.HighClk ; present_state.Idle ;
++-------------------------+-------------------------+-------------------------+----------------------+-----------------------+--------------------+
+; present_state.Idle      ; 0                       ; 0                       ; 0                    ; 0                     ; 0                  ;
+; present_state.HighClk   ; 0                       ; 0                       ; 0                    ; 1                     ; 1                  ;
+; present_state.LowClk    ; 0                       ; 0                       ; 1                    ; 0                     ; 1                  ;
+; present_state.CheckData ; 0                       ; 1                       ; 0                    ; 0                     ; 1                  ;
+; present_state.ValidData ; 1                       ; 0                       ; 0                    ; 0                     ; 1                  ;
++-------------------------+-------------------------+-------------------------+----------------------+-----------------------+--------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |sine_wave_generation_with_freq_detector|keyboard:inst4|byterec:inst1|present_state                                                                                                                                                                                                 ;
++------------------------------+------------------------------+----------------------------+--------------------------+------------------------+-------------------------+--------------------------+------------------------+------------------------+--------------------------+--------------------+
+; Name                         ; present_state.sample_ext_rel ; present_state.wait_ext_rel ; present_state.sample_ext ; present_state.wait_ext ; present_state.new_break ; present_state.sample_rel ; present_state.wait_rel ; present_state.new_make ; present_state.sample_nor ; present_state.idle ;
++------------------------------+------------------------------+----------------------------+--------------------------+------------------------+-------------------------+--------------------------+------------------------+------------------------+--------------------------+--------------------+
+; present_state.idle           ; 0                            ; 0                          ; 0                        ; 0                      ; 0                       ; 0                        ; 0                      ; 0                      ; 0                        ; 0                  ;
+; present_state.sample_nor     ; 0                            ; 0                          ; 0                        ; 0                      ; 0                       ; 0                        ; 0                      ; 0                      ; 1                        ; 1                  ;
+; present_state.new_make       ; 0                            ; 0                          ; 0                        ; 0                      ; 0                       ; 0                        ; 0                      ; 1                      ; 0                        ; 1                  ;
+; present_state.wait_rel       ; 0                            ; 0                          ; 0                        ; 0                      ; 0                       ; 0                        ; 1                      ; 0                      ; 0                        ; 1                  ;
+; present_state.sample_rel     ; 0                            ; 0                          ; 0                        ; 0                      ; 0                       ; 1                        ; 0                      ; 0                      ; 0                        ; 1                  ;
+; present_state.new_break      ; 0                            ; 0                          ; 0                        ; 0                      ; 1                       ; 0                        ; 0                      ; 0                      ; 0                        ; 1                  ;
+; present_state.wait_ext       ; 0                            ; 0                          ; 0                        ; 1                      ; 0                       ; 0                        ; 0                      ; 0                      ; 0                        ; 1                  ;
+; present_state.sample_ext     ; 0                            ; 0                          ; 1                        ; 0                      ; 0                       ; 0                        ; 0                      ; 0                      ; 0                        ; 1                  ;
+; present_state.wait_ext_rel   ; 0                            ; 1                          ; 0                        ; 0                      ; 0                       ; 0                        ; 0                      ; 0                      ; 0                        ; 1                  ;
+; present_state.sample_ext_rel ; 1                            ; 0                          ; 0                        ; 0                      ; 0                       ; 0                        ; 0                      ; 0                      ; 0                        ; 1                  ;
++------------------------------+------------------------------+----------------------------+--------------------------+------------------------+-------------------------+--------------------------+------------------------+------------------------+--------------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                   ;
++------------------------------------------------------------+---------------------------------------------------------+
+; Register name                                              ; Reason for Removal                                      ;
++------------------------------------------------------------+---------------------------------------------------------+
+; sine_wave:inst5|sine_table:inst1|sinx[1..6]                ; Lost fanout                                             ;
+; sine_wave:inst5|sine_table:inst1|sinx[6]~15                ; Merged with sine_wave:inst5|sine_table:inst1|sinx[5]~12 ;
+; sine_wave:inst5|sine_table:inst1|sinx[5]~12                ; Merged with sine_wave:inst5|sine_table:inst1|sinx[4]~9  ;
+; sine_wave:inst5|sine_table:inst1|sinx[4]~9                 ; Merged with sine_wave:inst5|sine_table:inst1|sinx[3]~6  ;
+; sine_wave:inst5|sine_table:inst1|sinx[3]~6                 ; Merged with sine_wave:inst5|sine_table:inst1|sinx[2]~3  ;
+; sine_wave:inst5|sine_table:inst1|sinx[2]~3                 ; Merged with sine_wave:inst5|sine_table:inst1|sinx[1]~0  ;
+; sine_wave:inst5|sine_table:inst1|sinx[2]~5                 ; Merged with sine_wave:inst5|sine_table:inst1|sinx[1]~2  ;
+; sine_wave:inst5|sine_table:inst1|sinx[3]~8                 ; Merged with sine_wave:inst5|sine_table:inst1|sinx[1]~2  ;
+; sine_wave:inst5|sine_table:inst1|sinx[4]~11                ; Merged with sine_wave:inst5|sine_table:inst1|sinx[1]~2  ;
+; sine_wave:inst5|sine_table:inst1|sinx[5]~14                ; Merged with sine_wave:inst5|sine_table:inst1|sinx[1]~2  ;
+; sine_wave:inst5|sine_table:inst1|sinx[6]~17                ; Merged with sine_wave:inst5|sine_table:inst1|sinx[1]~2  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx44356z2 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx44356z3 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx39371z2 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx39371z3 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx41365z2 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx41365z3 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx42362z2 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx42362z3 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx43359z2 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx43359z3 ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z1  ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z5  ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z4  ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z3  ; Stuck at GND due to stuck port data_in                  ;
+; MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx2546z2  ; Stuck at GND due to stuck port data_in                  ;
+; Total Number of Removed Registers = 31                     ;                                                         ;
++------------------------------------------------------------+---------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -357,12 +487,12 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 208   ;
+; Total registers                              ; 378   ;
 ; Number of registers using Synchronous Clear  ; 8     ;
-; Number of registers using Synchronous Load   ; 40    ;
-; Number of registers using Asynchronous Clear ; 152   ;
+; Number of registers using Synchronous Load   ; 72    ;
+; Number of registers using Asynchronous Clear ; 267   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 97    ;
+; Number of registers using Clock Enable       ; 175   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -380,11 +510,43 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; clk_divider:10Hz|count[9]                                      ; 2       ;
 ; clk_divider:10Hz|count[8]                                      ; 2       ;
 ; clk_divider:10Hz|count[6]                                      ; 2       ;
-; MSS_XTRCT:inst6|MSS_Core:inst|ADC_DATA_USER_obuf_7_~DFFDATAOUT ; 2       ;
-; freq_detector:inst|clk_divider:inst3|count[2]                  ; 2       ;
-; freq_detector:inst|clk_divider:inst3|count[0]                  ; 3       ;
-; Total number of inverted registers = 11                        ;         ;
+; sine_wave:inst5|sine_table:inst1|sinx[1]~0                     ; 6       ;
+; MSS_XTRCT:inst6|MSS_Core:inst|ADC_DATA_USER_obuf_7_~DFFDATAOUT ; 3       ;
+; freq_detector:inst|clk_divider:inst3|count[4]                  ; 2       ;
+; freq_detector:inst|clk_divider:inst3|count[5]                  ; 2       ;
+; freq_detector:inst|clk_divider:inst3|count[1]                  ; 2       ;
+; sine_wave:inst5|clk_divider:inst|count[1]                      ; 2       ;
+; sine_wave:inst5|clk_divider:inst|count[0]                      ; 3       ;
+; sine_wave:inst5|clk_divider:inst|count[7]                      ; 2       ;
+; sine_wave:inst5|clk_divider:inst|count[6]                      ; 2       ;
+; Total number of inverted registers = 17                        ;         ;
 +----------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                 ;
++---------------------------------------------+-----------------------------------------+------+
+; Register Name                               ; Megafunction                            ; Type ;
++---------------------------------------------+-----------------------------------------+------+
+; sine_wave:inst5|sine_table:inst1|sinx[1]~1  ; sine_wave:inst5|sine_table:inst1|Mux6~0 ; ROM  ;
+; sine_wave:inst5|sine_table:inst1|sinx[2]~4  ; sine_wave:inst5|sine_table:inst1|Mux6~0 ; ROM  ;
+; sine_wave:inst5|sine_table:inst1|sinx[3]~7  ; sine_wave:inst5|sine_table:inst1|Mux6~0 ; ROM  ;
+; sine_wave:inst5|sine_table:inst1|sinx[4]~10 ; sine_wave:inst5|sine_table:inst1|Mux6~0 ; ROM  ;
+; sine_wave:inst5|sine_table:inst1|sinx[5]~13 ; sine_wave:inst5|sine_table:inst1|Mux6~0 ; ROM  ;
+; sine_wave:inst5|sine_table:inst1|sinx[6]~16 ; sine_wave:inst5|sine_table:inst1|Mux6~0 ; ROM  ;
++---------------------------------------------+-----------------------------------------+------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |sine_wave_generation_with_freq_detector|sound_counter:inst11|count_i[4]      ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |sine_wave_generation_with_freq_detector|sound_counter:inst11|count_i[6]      ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |sine_wave_generation_with_freq_detector|keyboard:inst4|bitrec:inst|Selector7 ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; No         ; |sine_wave_generation_with_freq_detector|keyboard:inst4|bitrec:inst|Selector8 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -403,6 +565,15 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +---------------------------------+--------------------+------+--------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                            ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component|mult_accum_q1d2:auto_generated|ded_mult_nc31:ded_mult1|dffpipe_b3c:pre_result ;
++---------------------------------+-------+------+-----------------------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                                                                                ;
++---------------------------------+-------+------+-----------------------------------------------------------------------------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                                                                 ;
++---------------------------------+-------+------+-----------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -430,6 +601,26 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                           ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------+
+; Source assignments for sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+-------------------------------------------------+
+; Assignment                ; Value ; From ; To                                              ;
++---------------------------+-------+------+-------------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                               ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                               ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                               ;
++---------------------------+-------+------+-------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Source assignments for sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0|altsyncram_7p21:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                             ;
++---------------------------------+--------------------+------+------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                              ;
++---------------------------------+--------------------+------+------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -519,7 +710,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                     ;
 +----------------+-------+----------------------------------------------------------+
-; div            ; 5     ; Signed Integer                                           ;
+; div            ; 50    ; Signed Integer                                           ;
 +----------------+-------+----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -603,6 +794,88 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                               ;
 ; CBXI_PARAMETER                     ; altsyncram_pvr1      ; Untyped                                               ;
 +------------------------------------+----------------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component ;
++--------------------------------------+-----------------+-------------------------------------------------------------------+
+; Parameter Name                       ; Value           ; Type                                                              ;
++--------------------------------------+-----------------+-------------------------------------------------------------------+
+; accum_direction                      ; ADD             ; Untyped                                                           ;
+; accum_round_aclr                     ; ACLR3           ; Untyped                                                           ;
+; accum_round_pipeline_aclr            ; ACLR3           ; Untyped                                                           ;
+; accum_round_pipeline_reg             ; CLOCK0          ; Untyped                                                           ;
+; accum_round_reg                      ; CLOCK0          ; Untyped                                                           ;
+; accum_saturation_aclr                ; ACLR3           ; Untyped                                                           ;
+; accum_saturation_pipeline_aclr       ; ACLR3           ; Untyped                                                           ;
+; accum_saturation_pipeline_reg        ; CLOCK0          ; Untyped                                                           ;
+; accum_saturation_reg                 ; CLOCK0          ; Untyped                                                           ;
+; accum_sload_aclr                     ; ACLR3           ; Untyped                                                           ;
+; accum_sload_pipeline_aclr            ; ACLR3           ; Untyped                                                           ;
+; accum_sload_pipeline_reg             ; UNREGISTERED    ; Untyped                                                           ;
+; accum_sload_reg                      ; UNREGISTERED    ; Untyped                                                           ;
+; accum_sload_upper_data_aclr          ; ACLR3           ; Untyped                                                           ;
+; accum_sload_upper_data_pipeline_aclr ; ACLR3           ; Untyped                                                           ;
+; accum_sload_upper_data_pipeline_reg  ; CLOCK0          ; Untyped                                                           ;
+; accum_sload_upper_data_reg           ; CLOCK0          ; Untyped                                                           ;
+; accumulator_rounding                 ; NO              ; Untyped                                                           ;
+; accumulator_saturation               ; NO              ; Untyped                                                           ;
+; addnsub_aclr                         ; ACLR3           ; Untyped                                                           ;
+; addnsub_pipeline_aclr                ; ACLR3           ; Untyped                                                           ;
+; addnsub_pipeline_reg                 ; UNREGISTERED    ; Untyped                                                           ;
+; addnsub_reg                          ; UNREGISTERED    ; Untyped                                                           ;
+; dedicated_multiplier_circuitry       ; AUTO            ; Untyped                                                           ;
+; dsp_block_balancing                  ; AUTO            ; Untyped                                                           ;
+; extra_accumulator_latency            ; 0               ; Untyped                                                           ;
+; extra_multiplier_latency             ; 0               ; Untyped                                                           ;
+; input_aclr_a                         ; ACLR3           ; Untyped                                                           ;
+; input_aclr_b                         ; ACLR3           ; Untyped                                                           ;
+; input_reg_a                          ; UNREGISTERED    ; Untyped                                                           ;
+; input_reg_b                          ; UNREGISTERED    ; Untyped                                                           ;
+; input_source_a                       ; DATAA           ; Untyped                                                           ;
+; input_source_b                       ; DATAB           ; Untyped                                                           ;
+; mult_round_aclr                      ; ACLR3           ; Untyped                                                           ;
+; mult_round_reg                       ; CLOCK0          ; Untyped                                                           ;
+; mult_saturation_aclr                 ; ACLR3           ; Untyped                                                           ;
+; mult_saturation_reg                  ; CLOCK0          ; Untyped                                                           ;
+; multiplier_aclr                      ; ACLR3           ; Untyped                                                           ;
+; multiplier_reg                       ; UNREGISTERED    ; Untyped                                                           ;
+; multiplier_rounding                  ; NO              ; Untyped                                                           ;
+; multiplier_saturation                ; NO              ; Untyped                                                           ;
+; output_aclr                          ; ACLR3           ; Untyped                                                           ;
+; output_reg                           ; CLOCK0          ; Untyped                                                           ;
+; port_accum_is_saturated              ; UNUSED          ; Untyped                                                           ;
+; port_addnsub                         ; PORT_UNUSED     ; Untyped                                                           ;
+; port_mult_is_saturated               ; UNUSED          ; Untyped                                                           ;
+; port_signa                           ; PORT_UNUSED     ; Untyped                                                           ;
+; port_signb                           ; PORT_UNUSED     ; Untyped                                                           ;
+; representation_a                     ; SIGNED          ; Untyped                                                           ;
+; representation_b                     ; SIGNED          ; Untyped                                                           ;
+; sign_aclr_a                          ; ACLR3           ; Untyped                                                           ;
+; sign_aclr_b                          ; ACLR3           ; Untyped                                                           ;
+; sign_pipeline_aclr_a                 ; ACLR3           ; Untyped                                                           ;
+; sign_pipeline_aclr_b                 ; ACLR3           ; Untyped                                                           ;
+; sign_pipeline_reg_a                  ; UNREGISTERED    ; Untyped                                                           ;
+; sign_pipeline_reg_b                  ; UNREGISTERED    ; Untyped                                                           ;
+; sign_reg_a                           ; UNREGISTERED    ; Untyped                                                           ;
+; sign_reg_b                           ; UNREGISTERED    ; Untyped                                                           ;
+; width_a                              ; 8               ; Signed Integer                                                    ;
+; width_b                              ; 8               ; Signed Integer                                                    ;
+; width_result                         ; 32              ; Signed Integer                                                    ;
+; width_upper_data                     ; 1               ; Untyped                                                           ;
+; CBXI_PARAMETER                       ; mult_accum_q1d2 ; Untyped                                                           ;
++--------------------------------------+-----------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: freq_detector:inst|BUSMUX:inst12 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 8     ; Untyped                                              ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -793,13 +1066,161 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sine_wave:inst5 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; DIV_BY         ; 195   ; Untyped                             ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component ;
++------------------------+-------------+---------------------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                                      ;
++------------------------+-------------+---------------------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                                ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                              ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                              ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                            ;
+; LPM_WIDTH              ; 8           ; Signed Integer                                                            ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                                   ;
+; LPM_MODULUS            ; 0           ; Untyped                                                                   ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                                   ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                                   ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                                   ;
+; DEVICE_FAMILY          ; Cyclone II  ; Untyped                                                                   ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                                   ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                                        ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                                        ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                                   ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                                   ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                                   ;
+; CBXI_PARAMETER         ; cntr_1cj    ; Untyped                                                                   ;
++------------------------+-------------+---------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sine_wave:inst5|clk_divider:inst ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; div            ; 195   ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: keyboard:inst4|lpf:inst2 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; width          ; 4     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0        ;
++------------------------------------+----------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                    ; Type           ;
++------------------------------------+----------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                        ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                       ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                      ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                       ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                      ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                        ; Untyped        ;
+; OPERATION_MODE                     ; ROM                                                      ; Untyped        ;
+; WIDTH_A                            ; 6                                                        ; Untyped        ;
+; WIDTHAD_A                          ; 8                                                        ; Untyped        ;
+; NUMWORDS_A                         ; 256                                                      ; Untyped        ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                             ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                     ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                     ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                     ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                     ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                     ; Untyped        ;
+; WIDTH_B                            ; 1                                                        ; Untyped        ;
+; WIDTHAD_B                          ; 1                                                        ; Untyped        ;
+; NUMWORDS_B                         ; 1                                                        ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                                   ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                   ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                   ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                   ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                             ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                   ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                     ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                     ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                     ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                     ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                     ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                     ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                        ; Untyped        ;
+; WIDTH_BYTEENA_B                    ; 1                                                        ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                     ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                        ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                     ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                     ; Untyped        ;
+; INIT_FILE                          ; project.sine_wave_generation_with_freq_detector0.rtl.mif ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                   ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                        ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                                   ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                                   ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                                   ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                                   ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                          ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                          ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                    ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone II                                               ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_7p21                                          ; Untyped        ;
++------------------------------------+----------------------------------------------------------+----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: freq_detector:inst|freq_compare:inst11|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                                          ;
++------------------------+----------------+---------------------------------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                                                       ;
+; LPM_WIDTHD             ; 4              ; Untyped                                                       ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                                       ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                                       ;
+; LPM_PIPELINE           ; 0              ; Untyped                                                       ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                                       ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                                       ;
+; CBXI_PARAMETER         ; lpm_divide_6so ; Untyped                                                       ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                                       ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                                       ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                                  ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                                ;
++------------------------+----------------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------------------------------------------------------+
 ; altmult_accum Parameter Settings by Entity Instance                                                                   ;
 +---------------------------------------+-------------------------------------------------------------------------------+
 ; Name                                  ; Value                                                                         ;
 +---------------------------------------+-------------------------------------------------------------------------------+
-; Number of entity instances            ; 1                                                                             ;
+; Number of entity instances            ; 2                                                                             ;
 ; Entity Instance                       ; freq_detector:inst|altmult_accum0:inst1|altmult_accum:altmult_accum_component ;
+;     -- dedicated_multiplier_circuitry ; AUTO                                                                          ;
+;     -- port_signa                     ; PORT_UNUSED                                                                   ;
+;     -- port_signb                     ; PORT_UNUSED                                                                   ;
+;     -- representation_a               ; SIGNED                                                                        ;
+;     -- representation_b               ; SIGNED                                                                        ;
+;     -- width_a                        ; 8                                                                             ;
+;     -- width_b                        ; 8                                                                             ;
+;     -- width_result                   ; 32                                                                            ;
+; Entity Instance                       ; freq_detector:inst|altmult_accum0:inst8|altmult_accum:altmult_accum_component ;
 ;     -- dedicated_multiplier_circuitry ; AUTO                                                                          ;
 ;     -- port_signa                     ; PORT_UNUSED                                                                   ;
 ;     -- port_signb                     ; PORT_UNUSED                                                                   ;
@@ -816,7 +1237,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-------------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                               ;
 +-------------------------------------------+-------------------------------------------------------------------------------------+
-; Number of entity instances                ; 4                                                                                   ;
+; Number of entity instances                ; 5                                                                                   ;
 ; Entity Instance                           ; freq_detector:inst|lpm_ram_dp0:inst2|altsyncram:altsyncram_component                ;
 ;     -- OPERATION_MODE                     ; DUAL_PORT                                                                           ;
 ;     -- WIDTH_A                            ; 8                                                                                   ;
@@ -861,6 +1282,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                        ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                           ;
+; Entity Instance                           ; sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0                              ;
+;     -- OPERATION_MODE                     ; ROM                                                                                 ;
+;     -- WIDTH_A                            ; 6                                                                                   ;
+;     -- NUMWORDS_A                         ; 256                                                                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                        ;
+;     -- WIDTH_B                            ; 1                                                                                   ;
+;     -- NUMWORDS_B                         ; 1                                                                                   ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                              ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                        ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                           ;
 +-------------------------------------------+-------------------------------------------------------------------------------------+
 
 
@@ -870,36 +1302,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
-    Info: Processing started: Wed Jan 04 18:38:17 2017
+    Info: Processing started: Sun Jan 08 14:52:58 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off project -c project
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info: Found 2 design units, including 1 entities, in source file modules/misc/clk_divider.vhd
-    Info: Found design unit 1: clk_divider-arc_clk_divider
-    Info: Found entity 1: clk_divider
-Info: Found 2 design units, including 0 entities, in source file modules/misc/utils.vhd
-    Info: Found design unit 1: utils
-    Info: Found design unit 2: utils-body
-Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/ram_counter.vhd
-    Info: Found design unit 1: ram_counter-arc_ram_counter
-    Info: Found entity 1: ram_counter
-Info: Found 1 design units, including 1 entities, in source file modules/signal_proccesing/freq_detector.bdf
-    Info: Found entity 1: freq_detector
 Info: Found 1 design units, including 1 entities, in source file modules/signal_proccesing/acumm.bdf
     Info: Found entity 1: acumm
 Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/altmult_accum0.vhd
     Info: Found design unit 1: altmult_accum0-SYN
     Info: Found entity 1: altmult_accum0
-Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/zero.vhd
-    Info: Found design unit 1: zero-SYN
-    Info: Found entity 1: zero
 Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/freq_compare.vhd
     Info: Found design unit 1: freq_compare-arc_freq_compare
     Info: Found entity 1: freq_compare
+Info: Found 1 design units, including 1 entities, in source file modules/signal_proccesing/freq_detector.bdf
+    Info: Found entity 1: freq_detector
+Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/lpm_ram_dp0.vhd
+    Info: Found design unit 1: lpm_ram_dp0-SYN
+    Info: Found entity 1: lpm_ram_dp0
+Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/ram_counter.vhd
+    Info: Found design unit 1: ram_counter-arc_ram_counter
+    Info: Found entity 1: ram_counter
+Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/zero.vhd
+    Info: Found design unit 1: zero-SYN
+    Info: Found entity 1: zero
+Info: Found 2 design units, including 1 entities, in source file modules/misc/clk_divider.vhd
+    Info: Found design unit 1: clk_divider-arc_clk_divider
+    Info: Found entity 1: clk_divider
 Info: Found 1 design units, including 1 entities, in source file examples/freq_detector_mss.bdf
     Info: Found entity 1: freq_detector_mss
-Info: Found 2 design units, including 1 entities, in source file modules/misc/ob_si_conv.vhd
-    Info: Found design unit 1: ob_si_conv-arc_ob_si_conv
-    Info: Found entity 1: ob_si_conv
 Info: Found 1 design units, including 1 entities, in source file modules/mss/mss_basic.bdf
     Info: Found entity 1: MSS_BASIC
 Info: Found 4 design units, including 4 entities, in source file modules/mss/mss_core.edf
@@ -909,10 +1338,48 @@ Info: Found 4 design units, including 4 entities, in source file modules/mss/mss
     Info: Found entity 4: S_DAC_Interface
 Info: Found 1 design units, including 1 entities, in source file modules/mss/mss_xtrct.bdf
     Info: Found entity 1: MSS_XTRCT
-Info: Found 2 design units, including 1 entities, in source file modules/signal_proccesing/lpm_ram_dp0.vhd
-    Info: Found design unit 1: lpm_ram_dp0-SYN
-    Info: Found entity 1: lpm_ram_dp0
-Info: Elaborating entity "freq_detector_mss" for the top level hierarchy
+Info: Found 2 design units, including 1 entities, in source file modules/misc/ob_si_conv.vhd
+    Info: Found design unit 1: ob_si_conv-arc_ob_si_conv
+    Info: Found entity 1: ob_si_conv
+Info: Found 2 design units, including 0 entities, in source file modules/misc/utils.vhd
+    Info: Found design unit 1: utils
+    Info: Found design unit 2: utils-body
+Info: Found 1 design units, including 1 entities, in source file examples/sine_wave_generation_with_kb.bdf
+    Info: Found entity 1: sine_wave_generation_with_kb
+Info: Found 1 design units, including 1 entities, in source file examples/sine_wave_generation_with_freq_detector.bdf
+    Info: Found entity 1: sine_wave_generation_with_freq_detector
+Info: Found 2 design units, including 1 entities, in source file modules/keyboard/bitrec.vhd
+    Info: Found design unit 1: bitrec-arc_bitrec
+    Info: Found entity 1: bitrec
+Info: Found 2 design units, including 1 entities, in source file modules/keyboard/byterec.vhd
+    Info: Found design unit 1: byterec-arc_byterec
+    Info: Found entity 1: byterec
+Info: Found 2 design units, including 1 entities, in source file modules/keyboard/key_pressed_detector.vhd
+    Info: Found design unit 1: key_pressed_detector-arc_key_pressed_detector
+    Info: Found entity 1: key_pressed_detector
+Info: Found 1 design units, including 1 entities, in source file modules/keyboard/keyboard.bdf
+    Info: Found entity 1: keyboard
+Info: Found 2 design units, including 1 entities, in source file modules/keyboard/lpf.vhd
+    Info: Found design unit 1: lpf-arc_lpf
+    Info: Found entity 1: lpf
+Info: Found 2 design units, including 1 entities, in source file modules/signal_generation/counter_256.vhd
+    Info: Found design unit 1: counter_256-SYN
+    Info: Found entity 1: counter_256
+Info: Found 2 design units, including 1 entities, in source file modules/signal_generation/sine_table.vhd
+    Info: Found design unit 1: sine_table-arc_sine_table
+    Info: Found entity 1: sine_table
+Info: Found 1 design units, including 1 entities, in source file modules/signal_generation/sine_wave.bdf
+    Info: Found entity 1: sine_wave
+Info: Found 2 design units, including 1 entities, in source file modules/state_machine/fsm.vhd
+    Info: Found design unit 1: fsm-arc_fsm
+    Info: Found entity 1: fsm
+Info: Found 2 design units, including 1 entities, in source file modules/state_machine/sound_counter.vhd
+    Info: Found design unit 1: sound_counter-arc_sound_counter
+    Info: Found entity 1: sound_counter
+Info: Found 2 design units, including 1 entities, in source file modules/display_sounds/ranged_count_to_ss.vhd
+    Info: Found design unit 1: ranged_count_to_ss-arc_ranged_count_to_ss
+    Info: Found entity 1: ranged_count_to_ss
+Info: Elaborating entity "sine_wave_generation_with_freq_detector" for the top level hierarchy
 Info: Elaborating entity "freq_detector" for hierarchy "freq_detector:inst"
 Info: Elaborating entity "freq_compare" for hierarchy "freq_detector:inst|freq_compare:inst11"
 Info: Elaborating entity "altmult_accum0" for hierarchy "freq_detector:inst|altmult_accum0:inst1"
@@ -1011,8 +1478,11 @@ Info: Elaborating entity "clk_divider" for hierarchy "clk_divider:10Hz"
 Info: Elaborating entity "ob_si_conv" for hierarchy "ob_si_conv:inst7"
 Info: Elaborating entity "MSS_XTRCT" for hierarchy "MSS_XTRCT:inst6"
 Info: Elaborating entity "MSS_Core" for hierarchy "MSS_XTRCT:inst6|MSS_Core:inst"
+Warning: EDA design entry or synthesis tool was not specified.  Detecting EDA tool "Precision Synthesis" as the tool that generated the EDIF Input File.
 Info: Elaborating entity "modgen_counter_8_0" for hierarchy "MSS_XTRCT:inst6|MSS_Core:inst|modgen_counter_8_0:U1_modgen_counter_PDAC_COUNTER"
+Warning: EDA design entry or synthesis tool was not specified.  Detecting EDA tool "Precision Synthesis" as the tool that generated the EDIF Input File.
 Info: Elaborating entity "P_DAC_Interface" for hierarchy "MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3"
+Warning: EDA design entry or synthesis tool was not specified.  Detecting EDA tool "Precision Synthesis" as the tool that generated the EDIF Input File.
 Info: Elaborating entity "altsyncram" for hierarchy "MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component"
 Info: Elaborated megafunction instantiation "MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component"
 Info: Instantiated megafunction "MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component" with the following parameter:
@@ -1031,7 +1501,9 @@ Info: Instantiated megafunction "MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_gp81.tdf
     Info: Found entity 1: altsyncram_gp81
 Info: Elaborating entity "altsyncram_gp81" for hierarchy "MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component|altsyncram_gp81:auto_generated"
+Warning: Byte addressed memory initialization file "PDAC_conv_table.hex" was read in the word-addressed format
 Info: Elaborating entity "S_DAC_Interface" for hierarchy "MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4"
+Warning: EDA design entry or synthesis tool was not specified.  Detecting EDA tool "Precision Synthesis" as the tool that generated the EDIF Input File.
 Info: Elaborating entity "altsyncram" for hierarchy "MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component"
 Info: Elaborated megafunction instantiation "MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component"
 Info: Instantiated megafunction "MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component" with the following parameter:
@@ -1050,6 +1522,73 @@ Info: Instantiated megafunction "MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U
 Info: Found 1 design units, including 1 entities, in source file db/altsyncram_jp81.tdf
     Info: Found entity 1: altsyncram_jp81
 Info: Elaborating entity "altsyncram_jp81" for hierarchy "MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|altsyncram:U2_altsyncram_component|altsyncram_jp81:auto_generated"
+Warning: Byte addressed memory initialization file "SDAC_conv_table.hex" was read in the word-addressed format
+Info: Elaborating entity "sine_wave" for hierarchy "sine_wave:inst5"
+Info: Elaborating entity "sine_table" for hierarchy "sine_wave:inst5|sine_table:inst1"
+Info: Elaborating entity "counter_256" for hierarchy "sine_wave:inst5|counter_256:inst3"
+Info: Elaborating entity "lpm_counter" for hierarchy "sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "UP"
+    Info: Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info: Parameter "lpm_type" = "LPM_COUNTER"
+    Info: Parameter "lpm_width" = "8"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_1cj.tdf
+    Info: Found entity 1: cntr_1cj
+Info: Elaborating entity "cntr_1cj" for hierarchy "sine_wave:inst5|counter_256:inst3|lpm_counter:lpm_counter_component|cntr_1cj:auto_generated"
+Info: Elaborating entity "clk_divider" for hierarchy "sine_wave:inst5|clk_divider:inst"
+Info: Elaborating entity "keyboard" for hierarchy "keyboard:inst4"
+Info: Elaborating entity "key_pressed_detector" for hierarchy "keyboard:inst4|key_pressed_detector:inst3"
+Info: Elaborating entity "byterec" for hierarchy "keyboard:inst4|byterec:inst1"
+Info: Elaborating entity "bitrec" for hierarchy "keyboard:inst4|bitrec:inst"
+Info: Elaborating entity "lpf" for hierarchy "keyboard:inst4|lpf:inst2"
+Info: Elaborating entity "fsm" for hierarchy "fsm:inst9"
+Info: Elaborating entity "sound_counter" for hierarchy "sound_counter:inst11"
+Warning (10492): VHDL Process Statement warning at sound_counter.vhd(32): signal "count_i" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "ranged_count_to_ss" for hierarchy "ranged_count_to_ss:inst1"
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred altsyncram megafunction from the following design logic: "sine_wave:inst5|sine_table:inst1|Mux6~0"
+        Info: Parameter OPERATION_MODE set to ROM
+        Info: Parameter WIDTH_A set to 6
+        Info: Parameter WIDTHAD_A set to 8
+        Info: Parameter NUMWORDS_A set to 256
+        Info: Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info: Parameter RAM_BLOCK_TYPE set to AUTO
+        Info: Parameter INIT_FILE set to project.sine_wave_generation_with_freq_detector0.rtl.mif
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "freq_detector:inst|freq_compare:inst11|Div0"
+Info: Elaborated megafunction instantiation "sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0"
+Info: Instantiated megafunction "sine_wave:inst5|sine_table:inst1|altsyncram:Mux6_rtl_0" with the following parameter:
+    Info: Parameter "OPERATION_MODE" = "ROM"
+    Info: Parameter "WIDTH_A" = "6"
+    Info: Parameter "WIDTHAD_A" = "8"
+    Info: Parameter "NUMWORDS_A" = "256"
+    Info: Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info: Parameter "RAM_BLOCK_TYPE" = "AUTO"
+    Info: Parameter "INIT_FILE" = "project.sine_wave_generation_with_freq_detector0.rtl.mif"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_7p21.tdf
+    Info: Found entity 1: altsyncram_7p21
+Info: Elaborated megafunction instantiation "freq_detector:inst|freq_compare:inst11|lpm_divide:Div0"
+Info: Instantiated megafunction "freq_detector:inst|freq_compare:inst11|lpm_divide:Div0" with the following parameter:
+    Info: Parameter "LPM_WIDTHN" = "32"
+    Info: Parameter "LPM_WIDTHD" = "4"
+    Info: Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info: Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info: Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_6so.tdf
+    Info: Found entity 1: lpm_divide_6so
+Info: Found 1 design units, including 1 entities, in source file db/abs_divider_jbg.tdf
+    Info: Found entity 1: abs_divider_jbg
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_i2f.tdf
+    Info: Found entity 1: alt_u_div_i2f
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info: Found entity 1: add_sub_lkc
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info: Found entity 1: add_sub_mkc
+Info: Found 1 design units, including 1 entities, in source file db/lpm_abs_fq9.tdf
+    Info: Found entity 1: lpm_abs_fq9
+Info: Found 1 design units, including 1 entities, in source file db/lpm_abs_0s9.tdf
+    Info: Found entity 1: lpm_abs_0s9
 Info: WYSIWYG I/O primitives converted to equivalent logic
     Info: WYSIWYG I/O primitive "MSS_XTRCT:inst6|MSS_Core:inst|ADC_PART_EXT_ENABLE_USER_ibuf" converted to equivalent logic
     Info: WYSIWYG I/O primitive "MSS_XTRCT:inst6|MSS_Core:inst|INT_EXT_ENABLES_FOR_UNITS_USER_ibuf" converted to equivalent logic
@@ -1116,7 +1655,26 @@ Info: WYSIWYG I/O primitives converted to equivalent logic
     Info: WYSIWYG I/O primitive "MSS_XTRCT:inst6|MSS_Core:inst|SDAC_1_DATA_USER_ibuf_5_" converted to equivalent logic
 Info: Registers with preset signals will power-up high
 Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning: Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "sound_counter:inst11|count[6]" is converted into an equivalent circuit using register "sound_counter:inst11|count[6]~_emulated" and latch "sound_counter:inst11|count[6]~latch"
+    Warning (13310): Register "sound_counter:inst11|count[5]" is converted into an equivalent circuit using register "sound_counter:inst11|count[5]~_emulated" and latch "sound_counter:inst11|count[5]~latch"
+    Warning (13310): Register "sound_counter:inst11|count[4]" is converted into an equivalent circuit using register "sound_counter:inst11|count[4]~_emulated" and latch "sound_counter:inst11|count[4]~latch"
+    Warning (13310): Register "sound_counter:inst11|count[3]" is converted into an equivalent circuit using register "sound_counter:inst11|count[3]~_emulated" and latch "sound_counter:inst11|count[3]~latch"
+    Warning (13310): Register "sound_counter:inst11|count[2]" is converted into an equivalent circuit using register "sound_counter:inst11|count[2]~_emulated" and latch "sound_counter:inst11|count[2]~latch"
+    Warning (13310): Register "sound_counter:inst11|count[1]" is converted into an equivalent circuit using register "sound_counter:inst11|count[1]~_emulated" and latch "sound_counter:inst11|count[1]~latch"
+    Warning (13310): Register "sound_counter:inst11|count[0]" is converted into an equivalent circuit using register "sound_counter:inst11|count[0]~_emulated" and latch "sound_counter:inst11|count[0]~latch"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ss2[6]" is stuck at VCC
+    Warning (13410): Pin "ss2[5]" is stuck at VCC
+    Warning (13410): Pin "ss2[4]" is stuck at VCC
+    Warning (13410): Pin "ss2[3]" is stuck at VCC
+    Warning (13410): Pin "ss2[2]" is stuck at VCC
+    Warning (13410): Pin "ss2[1]" is stuck at VCC
 Critical Warning: Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register sound_counter:inst11|count_i[6] will power up to Low
+    Critical Warning (18010): Register sound_counter:inst11|count_i[1] will power up to Low
+    Critical Warning (18010): Register sound_counter:inst11|count_i[2] will power up to Low
+    Critical Warning (18010): Register sound_counter:inst11|count_i[3] will power up to Low
     Critical Warning (18010): Register clk_divider:10Hz|count[22] will power up to High
     Critical Warning (18010): Register clk_divider:10Hz|count[19] will power up to High
     Critical Warning (18010): Register clk_divider:10Hz|count[18] will power up to High
@@ -1125,9 +1683,20 @@ Critical Warning: Ignored Power-Up Level option on the following registers
     Critical Warning (18010): Register clk_divider:10Hz|count[9] will power up to High
     Critical Warning (18010): Register clk_divider:10Hz|count[8] will power up to High
     Critical Warning (18010): Register clk_divider:10Hz|count[6] will power up to High
-    Critical Warning (18010): Register freq_detector:inst|clk_divider:inst3|count[2] will power up to High
-    Critical Warning (18010): Register freq_detector:inst|clk_divider:inst3|count[0] will power up to High
-Info: Removed 7 MSB VCC or GND address nodes from RAM block "MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U1_altsyncram_component|altsyncram_gp81:auto_generated|ALTSYNCRAM"
+    Critical Warning (18010): Register freq_detector:inst|clk_divider:inst3|count[5] will power up to High
+    Critical Warning (18010): Register freq_detector:inst|clk_divider:inst3|count[4] will power up to High
+    Critical Warning (18010): Register freq_detector:inst|clk_divider:inst3|count[1] will power up to High
+    Critical Warning (18010): Register sine_wave:inst5|clk_divider:inst|count[7] will power up to High
+    Critical Warning (18010): Register sine_wave:inst5|clk_divider:inst|count[6] will power up to High
+    Critical Warning (18010): Register sine_wave:inst5|clk_divider:inst|count[1] will power up to High
+    Critical Warning (18010): Register sine_wave:inst5|clk_divider:inst|count[0] will power up to High
+Info: 6 registers lost all their fanouts during netlist optimizations. The first 6 are displayed below.
+    Info: Register "sine_wave:inst5|sine_table:inst1|sinx[1]" lost all its fanouts during netlist optimizations.
+    Info: Register "sine_wave:inst5|sine_table:inst1|sinx[2]" lost all its fanouts during netlist optimizations.
+    Info: Register "sine_wave:inst5|sine_table:inst1|sinx[3]" lost all its fanouts during netlist optimizations.
+    Info: Register "sine_wave:inst5|sine_table:inst1|sinx[4]" lost all its fanouts during netlist optimizations.
+    Info: Register "sine_wave:inst5|sine_table:inst1|sinx[5]" lost all its fanouts during netlist optimizations.
+    Info: Register "sine_wave:inst5|sine_table:inst1|sinx[6]" lost all its fanouts during netlist optimizations.
 Info: Removed 7 MSB VCC or GND address nodes from RAM block "MSS_XTRCT:inst6|MSS_Core:inst|P_DAC_Interface:U3|altsyncram:U2_altsyncram_component|altsyncram_gp81:auto_generated|ALTSYNCRAM"
 Info: Found the following redundant logic cells in design
     Info (17048): Logic cell "MSS_XTRCT:inst6|MSS_Core:inst|CHOOSEN_SDACs_PART_ENABLE"
@@ -1142,16 +1711,16 @@ Info: Found the following redundant logic cells in design
     Info (17048): Logic cell "MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx56931z1"
     Info (17048): Logic cell "MSS_XTRCT:inst6|MSS_Core:inst|S_DAC_Interface:U4|nx65350z1"
     Info (17048): Logic cell "MSS_XTRCT:inst6|MSS_Core:inst|CHOOSEN_ADC_PART_ENABLE"
-Info: Implemented 428 device resources after synthesis - the final resource count might be different
-    Info: Implemented 10 input pins
-    Info: Implemented 26 output pins
-    Info: Implemented 359 logic cells
-    Info: Implemented 32 RAM segments
-    Info: Implemented 1 DSP elements
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 255 megabytes
-    Info: Processing ended: Wed Jan 04 18:38:20 2017
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+Info: Implemented 1329 device resources after synthesis - the final resource count might be different
+    Info: Implemented 12 input pins
+    Info: Implemented 50 output pins
+    Info: Implemented 1227 logic cells
+    Info: Implemented 38 RAM segments
+    Info: Implemented 2 DSP elements
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 42 warnings
+    Info: Peak virtual memory: 260 megabytes
+    Info: Processing ended: Sun Jan 08 14:53:04 2017
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

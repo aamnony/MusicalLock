@@ -1,15 +1,17 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_signed.all;
+use ieee.std_logic_arith.all;
 
 package utils is
 
-    function si2ob (signed_integer: std_logic_vector(7 downto 0))
-        return std_logic_vector;
-        
-    function ob2si (offset_binary: std_logic_vector(7 downto 0))
-        return std_logic_vector;
-        
+    function si2ob (signed_integer: std_logic_vector(7 downto 0)) return std_logic_vector;
+
+    function ob2si (offset_binary: std_logic_vector(7 downto 0)) return std_logic_vector;
+
+    function char2lcd (char: character) return std_logic_vector;
+
+
     subtype ranged_count is integer range -50 to 50;
     
     type ranged_count_array is array(integer range <>) of ranged_count;
@@ -18,16 +20,19 @@ end package;
 
 package body utils is
     
-    function si2ob (signed_integer: std_logic_vector(7 downto 0)) 
-        return std_logic_vector is
+    function si2ob (signed_integer: std_logic_vector(7 downto 0)) return std_logic_vector is
     begin
         return signed_integer + 128;
     end function;
     
-    function ob2si (offset_binary: std_logic_vector(7 downto 0)) 
-        return std_logic_vector is
+    function ob2si (offset_binary: std_logic_vector(7 downto 0)) return std_logic_vector is
     begin
         return offset_binary + 128;
     end function;
     
+    function char2lcd (char: character) return std_logic_vector is
+    begin
+        return conv_std_logic_vector(character'pos(char), 8);
+    end function;
+        
 end package body;

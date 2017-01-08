@@ -67,8 +67,8 @@ if {[is_project_open]} {
 #   set_location_assignment PIN_U18   -to LEDG4 ;# LEDG4
 #   set_location_assignment PIN_U17   -to LEDG5 ;# LEDG5
 #   set_location_assignment PIN_AA20  -to LEDG6 ;# LEDG6
-#   set_location_assignment PIN_Y18   -to LEDG7 ;# LEDG7
-#   set_location_assignment PIN_Y12   -to LEDG8 ;# LEDG8 (between 7-segments)
+   set_location_assignment PIN_Y18   -to unlock ;# LEDG7
+#   set_location_assignment PIN_Y12   -to unlock ;# LEDG8 (between 7-segments)
 
 
    ;##################################################
@@ -77,7 +77,7 @@ if {[is_project_open]} {
    ;# Active High - ON when '1                       #
    ;##################################################
 
-#   set_location_assignment PIN_AE23  -to count[0]   ;# LEDR0
+   set_location_assignment PIN_AE23  -to blowup   ;# LEDR0
 #   set_location_assignment PIN_AF23  -to count[1]   ;# LEDR1
 #   set_location_assignment PIN_AB21  -to count[2]   ;# LEDR2
 #   set_location_assignment PIN_AC22  -to count[3]   ;# LEDR3
@@ -106,29 +106,29 @@ if {[is_project_open]} {
 
   ;# the group of 4 seven segments on the right
 
-#   set_location_assignment PIN_AF10 -to ss0[6]   ;# a ss0[6]
-#   set_location_assignment PIN_AB12 -to ss0[5]   ;# b ss0[5]
-#   set_location_assignment PIN_AC12 -to ss0[4]   ;# c ss0[4]
-#   set_location_assignment PIN_AD11 -to ss0[3]   ;# d ss0[3]
-#   set_location_assignment PIN_AE11 -to ss0[2]   ;# e ss0[2]
-#   set_location_assignment PIN_V14  -to ss0[1]   ;# f ss0[1]
-#   set_location_assignment PIN_V13  -to ss0[0]   ;# g ss0[0]
-##
-#   set_location_assignment PIN_V20  -to ss1[6]   ;# a ss1[6]
-#   set_location_assignment PIN_V21  -to ss1[5]   ;# b ss1[5]
-#   set_location_assignment PIN_W21  -to ss1[4]   ;# c ss1[4]
-#   set_location_assignment PIN_Y22  -to ss1[3]   ;# d ss1[3]
-#   set_location_assignment PIN_AA24 -to ss1[2]   ;# e ss1[2]
-#   set_location_assignment PIN_AA23 -to ss1[1]   ;# f ss1[1]
-#   set_location_assignment PIN_AB24 -to ss1[0]   ;# g ss1[0]
-##
-#   set_location_assignment PIN_AB23 -to ss2[6]   ;# a ss2[6]
-#   set_location_assignment PIN_V22  -to ss2[5]   ;# b ss2[5]
-#   set_location_assignment PIN_AC25 -to ss2[4]   ;# c ss2[4]
-#   set_location_assignment PIN_AC26 -to ss2[3]   ;# d ss2[3]
-#   set_location_assignment PIN_AB26 -to ss2[2]   ;# e ss2[2]
-#   set_location_assignment PIN_AB25 -to ss2[1]   ;# f ss2[1]
-#   set_location_assignment PIN_Y24  -to ss2[0]   ;# g ss2[0]
+   set_location_assignment PIN_AF10 -to ss0[6]   ;# a ss0[6]
+   set_location_assignment PIN_AB12 -to ss0[5]   ;# b ss0[5]
+   set_location_assignment PIN_AC12 -to ss0[4]   ;# c ss0[4]
+   set_location_assignment PIN_AD11 -to ss0[3]   ;# d ss0[3]
+   set_location_assignment PIN_AE11 -to ss0[2]   ;# e ss0[2]
+   set_location_assignment PIN_V14  -to ss0[1]   ;# f ss0[1]
+   set_location_assignment PIN_V13  -to ss0[0]   ;# g ss0[0]
+#
+   set_location_assignment PIN_V20  -to ss1[6]   ;# a ss1[6]
+   set_location_assignment PIN_V21  -to ss1[5]   ;# b ss1[5]
+   set_location_assignment PIN_W21  -to ss1[4]   ;# c ss1[4]
+   set_location_assignment PIN_Y22  -to ss1[3]   ;# d ss1[3]
+   set_location_assignment PIN_AA24 -to ss1[2]   ;# e ss1[2]
+   set_location_assignment PIN_AA23 -to ss1[1]   ;# f ss1[1]
+   set_location_assignment PIN_AB24 -to ss1[0]   ;# g ss1[0]
+#
+   set_location_assignment PIN_AB23 -to ss2[6]   ;# a ss2[6]
+   set_location_assignment PIN_V22  -to ss2[5]   ;# b ss2[5]
+   set_location_assignment PIN_AC25 -to ss2[4]   ;# c ss2[4]
+   set_location_assignment PIN_AC26 -to ss2[3]   ;# d ss2[3]
+   set_location_assignment PIN_AB26 -to ss2[2]   ;# e ss2[2]
+   set_location_assignment PIN_AB25 -to ss2[1]   ;# f ss2[1]
+   set_location_assignment PIN_Y24  -to ss2[0]   ;# g ss2[0]
 ##
 #   set_location_assignment PIN_Y23  -to ss3[6]   ;# a ss3[6]
 #   set_location_assignment PIN_AA25 -to ss3[5]   ;# b ss3[5]
