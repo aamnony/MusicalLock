@@ -16,7 +16,7 @@ port
 end entity;
 
 architecture arc_freq_compare of freq_compare is
-    constant SOUND_TRESHOLD: integer := 50;
+    constant SOUND_TRESHOLD: integer := 1000000;
 begin
 process (clk, resetN)
 	variable v: integer;
@@ -26,7 +26,7 @@ begin
         v := 0;
     elsif rising_edge(clk) then
 		if enable = '1' then
-			v := (conv_integer(signal_squared) / 5 ) * 4;
+			v := (conv_integer(signal_squared) / 10 ) * 9;
 			if (autocorr >= SOUND_TRESHOLD) and (autocorr >= v) then
 				correct_freq <= '1';
 			else

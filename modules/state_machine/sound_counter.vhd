@@ -19,7 +19,7 @@ end entity;
 
 architecture arc_sound_counter of sound_counter is
     signal valid_i: std_logic;
-    signal count_i: integer range -50 to 50;
+    signal count_i: integer range -99 to 99;
 begin
     valid <= valid_i;
     count_internal <= count_i;
@@ -31,7 +31,7 @@ begin
         count_i <= 0;
         count <= count_i;
     elsif rising_edge(clk) then
-        if valid_i = '1' then
+        if valid_i = '1' or count_i = -99 then
             count_i <= 0;
             count <= count_i;
         end if;
@@ -40,11 +40,11 @@ begin
             if prev_sound /= sound then
                 valid_i <= '1';
             elsif prev_sound = '1' then
-                if count_i <= 50 then
+                if count_i < 99 then
                     count_i <= count_i + 1;
                 end if;
             else
-                if count_i >= -50 then
+                if count_i > -99 then
                     count_i <= count_i - 1;
                 end if;
             end if;

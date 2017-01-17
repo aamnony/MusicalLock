@@ -61,15 +61,15 @@ applicable agreement for further details.
 	(port
 		(pt 184 48)
 		(output)
-		(text "count[6..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "count[6..0]" (rect 110 43 163 55)(font "Arial" ))
+		(text "count[7..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "count[7..0]" (rect 110 43 163 55)(font "Arial" ))
 		(line (pt 184 48)(pt 168 48)(line_width 3))
 	)
 	(port
 		(pt 184 64)
 		(output)
-		(text "count_internal[6..0]" (rect 0 0 94 12)(font "Arial" ))
-		(text "count_internal[6..0]" (rect 69 59 163 71)(font "Arial" ))
+		(text "count_internal[7..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "count_internal[7..0]" (rect 69 59 163 71)(font "Arial" ))
 		(line (pt 184 64)(pt 168 64)(line_width 3))
 	)
 	(drawing
